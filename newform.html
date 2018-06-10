@@ -1,0 +1,2070 @@
+<html lang="de-DE">
+<head>
+	<title>Bedarfsfragebogen</title>
+  	<!-- CSS -->
+  	<link rel="stylesheet" href="https://use.typekit.net/gqe8ffo.css"/>
+ 	<link rel="stylesheet" type="text/css" href="css/site_global.css?crc=433910277"/>
+  	<link rel="stylesheet" type="text/css" href="css/master_master-page.css?crc=4199998060"/>
+  	<link rel="stylesheet" type="text/css" href="css/fragebogen.css?crc=4120372853" id="pagesheet"/>
+  	
+
+
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  	<meta name="generator" content="2018.1.0.386"/>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  	<script src="../scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+	<style>
+
+			body p {
+				font-family: source-sans-pro, sans-serif;
+				line-height: 19;
+				font-size: 16px;
+			}
+
+		    form {
+              width: 100%;
+            }
+
+            input, textarea {
+              border: 1px solid #ccc;
+              padding-left: 8px;
+            }
+
+            input[type='checkbox'], input[type='radio'] {
+              margin-right: 5px;
+            }
+
+            li > input[type='text'] {
+
+            }
+
+            .formularz {
+            	color: #333;
+            }
+
+            .no-extra-space > li {
+            	padding: 0px !important;
+            	margin: 0px !important;
+            }
+
+            .required:after {
+                color: red;
+                content: ' *';
+            }
+
+            .warning {
+            	border-width: 2px;
+            	border-color: red;
+            }
+
+            .button {
+              background-color: #2863B4;
+              width: 250px;
+              display: table;
+              margin: 20px auto;
+             
+              padding: 10px 40px;
+        
+              text-transform: uppercase;
+              color: white;
+            }
+
+            .button:hover {
+              background: #1E99FF;
+            }
+
+            .main { display: flex;}
+
+            .container {
+              width: 75%;
+            }
+
+            .container, .flex-container {
+              margin-bottom: 25px;
+            }
+
+            .flex-container {
+              flex-direction: row;
+              display: flex;
+              display:-webkit-flex;
+              flex-wrap: wrap;
+             
+            }
+
+            .flex-row {
+            	display: flex;
+            	flex-wrap: nowrap;
+            	margin-right: 2px;
+            }
+            .flex-row li {
+            	flex: 0 1 calc(10% - 2px);
+            	min-width: 57px;
+            }
+
+            .flex-column {
+              margin-right: 50px;
+              display: flex;
+              display:-webkit-flex;
+              flex-direction: column;
+              align-items: left;
+              flex: 0 1 calc(50% - 50px);
+            }
+
+            .flex-column > li {
+              width: 100%;
+              display: flex;
+              display:-webkit-flex;
+              margin-top: 5px;
+              margin-bottom: 5px;
+            }
+
+            .flex-column > li > label,
+            .flex-column li p {
+              
+              flex: 1 0 27%;
+              max-width: 180px;
+              margin-top: 8px;
+              margin-bottom: 8px;
+            }
+             
+            .flex-column > li > label + *
+            {
+              flex: 1 0 73%;
+            }
+
+            .flex-checkbox-column {
+              width: 100%;
+              margin-top: 0px;
+              display: flex;
+              
+              flex-direction: row;
+              flex-wrap: wrap;
+            }
+
+            .flex-checkbox-column li {
+              margin: 4px;
+              flex: 0 1 calc(25% - 9px);
+            }
+
+            ul.five-per-row li {
+            	flex: 0 1 calc(20% - 8px);
+            }
+            ul.four-per-row li {
+            	flex: 0 1 calc(25% - 8px);
+            }
+            ul.three-per-row li {
+            	flex: 0 1 calc(33% - 8px);
+            }
+            ul.two-per-row li {
+            	flex: 0 1 calc(50% - 8px);
+            }
+
+            .one-fourth {
+            	flex: 0 1 calc(25% - 8px) !important;
+            }
+            .two-fourths {
+            	flex: 0 1 calc(50% - 8px) !important;
+            }
+            .three-fourths {
+            	flex: 0 1 calc(75% - 8px) !important;
+            }
+            .full {
+            	width: 100%;
+            }
+
+            .twentyfive-seventyfive li:nth-child(odd){
+            	flex: 0 1 calc(25% - 8px) !important;
+			}
+			.twentyfive-seventyfive li:nth-child(even){
+            	flex: 0 1 calc(75% - 8px) !important;
+			}
+			.twentyfive-seventyfive li input[type="text"], .twentyfive-seventyfive li textarea {
+				width: 100%
+			}
+
+			.ten-ninety li:nth-child(odd){
+            	flex: 0 1 calc(10% - 8px) !important;
+			}
+			.ten-ninety li:nth-child(even){
+            	flex: 0 1 calc(90% - 8px) !important;
+			}
+
+            ul > label {
+              margin-top: 35px;
+              margin-bottom: 20px;
+              width: 100%;
+              font-weight: bold;
+            }
+
+            ul > span {
+            	display: inline-block;
+            	margin: 20px 0;
+            	width: 100%;
+            }
+
+            ul > span.small-text {
+            	margin: 3px;
+            }
+
+            .blue-label, .grey-label {
+              font-size: 1.1em;
+              padding: 4px;
+            }
+
+            .blue-label {
+              display: inline-block;
+              background: #1E90FF;
+              color: white;
+            }
+
+            .grey-label {
+              padding: 1px;
+              width: 50%;
+              background: #eee;
+              color: red;
+            }
+
+            .newform {
+            	padding-left: 275px;
+            	padding-right: 25px;
+            	overflow-x: hidden;
+            }
+
+            .navbar-horizontal {
+            	z-index: 50;
+            	width: 100%;
+            	height: 77px;
+            	background-color: #2863B4;
+            	position: fixed;
+            	top: 0;
+            	left: 0;
+            }
+
+            .navbar-horizontal ul {
+            	z-index: 50;
+
+            	position: fixed;
+            	top: 88px;
+            	right: 10%;
+
+            	list-style-type: none;
+			    margin: 0;
+			    padding: 0;
+			    width: 25%;
+			    min-width: 200px;
+			    background-color: #f1f1f1;
+			  
+			    position: fixed; /* Make it stick, even on scroll */
+			    overflow: auto;
+            }
+            .navbar-horizontal > ul > li:last-child {
+            	margin-bottom: 0px;
+            }
+
+            .navbar-horizontal ul li {
+            	display: block;
+            	float:none;
+            	text-align: center;
+            	background-color: #2863B4;
+            	padding: 1px 14px;
+            	margin-bottom: 2px;
+            }
+            .navbar-horizontal ul li:hover {
+            	text-decoration: underline;
+            }
+
+
+            .navbar-horizontal p.nav-title {
+            	float: left;
+            	line-height: 77px;
+            	color: #E9E9EA;
+            	margin-left: 50px;
+
+            	font-size: 2.5em;
+    			
+
+    			font-family: pragmatica-extended, sans-serif;
+			    font-weight: 400;
+			    text-decoration: none;
+			    font-feature-settings: 'liga';
+            }
+
+            .navbar-horizontal img.hamburger {
+            	/*position: relative;
+            	right: 0px;*/
+            	float: right;
+            	line-height: 77px;
+            	height: 34px;
+            	margin-top: 20px;
+            	margin-right: 50px;
+            }
+
+            .navbar {
+            	flex: 1 0 218px;
+            	width: 218px;
+            	height: 100vh;
+            	background-color: #2863B4;
+			    position: fixed;
+			    top: 0px;
+			    left: 0px;
+            }
+
+            .navbar > img {
+        	    width: 149px;
+			    height: 147px;
+			    position: fixed;
+			    top: 50px;
+			    left: 35px;
+            }
+
+            .navbar > ul {
+            	position: fixed;
+            	top: 245px;
+            	left: 25px;
+            }
+            .navbar > ul > li > a, .navbar-horizontal > ul > li > a {
+            	line-height: 40px;
+			    text-align: left;
+			    font-size: 16px;
+			    color: #E9E9EA;
+			    font-family: pragmatica-extended, sans-serif !important;
+			    font-weight: 400;
+
+			    text-decoration: none;
+			    font-feature-settings: 'liga';
+            }
+
+            .navbar > ul > li > a:visited, .navbar > ul > li > a:hover {
+                /*color: #800080;*/
+    			text-decoration: underline;
+			}
+
+			p.title-bar {
+			    min-height: 26px;
+			    background-color: transparent;
+			    line-height: 26px;
+			    text-align: center;
+			    font-size: 22px;
+			    color: #FFFFFF;
+			    font-family: pragmatica-extended, sans-serif;
+			    font-weight: 400;
+
+			   
+			    padding: 25px;
+			    background-color: gray;
+			    opacity: .5;
+			    width: 100%;
+			    position: relative;
+			    top: -30px;
+			    left: -57px;
+			    width: calc(100% + 57px);
+			}
+
+			.text > h1 {
+				position: relative;
+				top: -40px;
+				padding-bottom: 5px;
+			}
+
+			.text > h1 {
+				font-weight: 700;
+			    margin-top: 70px;
+			    font-size: 30px;
+			    line-height: 36px;
+			    min-height: 39px;
+			    text-align: center;
+			    color: #000000;
+			    position: relative;
+			    font-family: park-lane, serif;
+			    font-style: italic;
+			    word-wrap: break-word;
+			}
+			.text > span > p, .terms{
+				display: block;
+				font-weight: 400;
+				margin-top: 20px;
+			    /*font-size: 16px;*/
+			    line-height: 22px;
+			    position: relative;
+			    font-family: source-sans-pro, sans-serif;
+			    padding-left: 60px;
+			    padding-right: 60px;
+			}
+
+			.site-image {
+				position: relative;
+				left: -16px;
+				top: 17px;
+			}
+
+			.flex-file-column {
+				margin: 50px 0 50px 0;
+				display: flex;
+				align-items: center;
+  				justify-content: center;
+			}
+
+			.flex-file-column li {
+				flex: 1 0 50%;
+				margin-right: 50px;
+			}
+
+			.red {
+				color: red;
+			}
+
+			@media only screen and (max-width: 483px) {
+
+				.newform {
+					padding-left: 5px !important;
+				}
+
+				li label.formularz {
+					font-size: 9px;
+				}
+			}
+
+			@media only screen and (max-width: 573px) {
+				.flex-file-column {
+					position: relative;
+					left: 80px;
+				}
+				
+				.text > span > p, .terms {
+					padding-left: 2%;
+					padding-right: 2%;
+				}
+
+				ul > li {
+					min-height: 30px;
+				}
+			}
+
+			@media only screen and (max-width: 800px) {
+				.flex-container {
+					flex-wrap: wrap;
+				}
+				.flex-column {
+
+			      padding-right: 15px;
+	              margin-top: 20px;
+	              flex: 1 0 calc(100% - 15px);
+          		}
+
+          		ul.four-per-row li {
+          			flex: 0 1 calc(50% - 8px);
+          		}
+
+          		.flex-checkbox-column li input[type='text'] {
+					width: 100%;
+				}
+		    }
+
+			@media only screen and (max-width: 1028px) {
+		      .navbar {
+		      	display: none;
+		      }
+
+		      .newform {
+		      	padding-left: 25px;
+		      	padding-top: 77px;
+		      }
+		    }
+
+		    @media only screen and (min-width: 1029px) {
+
+		      .navbar-horizontal {
+		      	display: none;
+		      }
+		    }
+		
+			.small-text {
+				color: #555;
+				margin-bottom: 2px;
+				font-size: 13px;
+				line-height: 13px;
+			}
+  </style>
+</head>
+<body>
+	<div class="navbar-horizontal">
+		<a href="index.html"><p class="nav-title">AS Pflege24</p></a>
+		<img class="hamburger" src="../images/menu-1.svg?crc=446820304">
+		<ul class="hidden">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="ueber-uns.html">Über uns</a></li>
+			<li><a href="leistungen.html">Leistungen</a></li>
+			<li><a href="kosten.html">Kosten</a></li>
+			<li><a href="informationen.html">Informationen</a></li>
+			<li><a href="fragebogen.html">Bedarfsfragebogen</a></li> <!-- fragebogen.html -->
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</ul>
+	</div>
+	<div class="main">
+		<div class="navbar">
+			<img src="../images/logo.svg?crc=3952794798">
+
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="ueber-uns.html">Über uns</a></li>
+				<li><a href="leistungen.html">Leistungen</a></li>
+				<li><a href="kosten.html">Kosten</a></li>
+				<li><a href="informationen.html">Informationen</a></li>
+				<li><a href="fragebogen.html">Bedarfsfragebogen</a></li> <!-- fragebogen.html -->
+				<li><a href="kontakt.html">Kontakt</a></li>
+			</ul>
+		</div>
+
+		<div class="newform">
+			<div class="text">
+				<img class="site-image" src="../images/altenpflege.svg?crc=4123353865">
+				<p class="title-bar">Bedarfsfragebogen</p>
+				<h1>- Bedarfsfragebogen für die Suche einer geeigneten<br> Betreuungsperson -</h1>
+
+				<span>
+				<p>Ihre Angaben helfen uns, Ihre Situation vor Ort einschätzen zu können. Anhand des Bedarfsfragebogens finden wir eine Betreuungskraft für die 24 Stunden Betreuung nach Ihren individuellen Bedürfnissen und Wünschen.</p>
+
+ 
+
+				<p>Bitte laden Sie den Fragebogen herunter, füllen ihn so genau wie möglich aus und schicken diesen per E-Mail an info@as-pflege24.de.</p>
+
+ 
+
+				<p>Alternativ können Sie machen Ihre Angaben gleich online.</p>
+
+ 
+
+				<p>Bei Fragen stehen wir Ihnen gerne telefonisch zur Verfügung 0 2635 925 40 64.</p>
+
+ 
+
+				<p>Ihre Angaben werden selbstverständlich vetraulich behandelt. Siehe bitte unsere Datenschutzerklärung.</p>
+				</span>
+
+				<ul class="flex-file-column">
+					<li style="text-align: right">Bedarfsfragebogen PDF-Datei</li>
+					<li><p><a href="/assets/bedarfsfragebogen.pdf"><img border="0" height="55" src="/images/file.svg?crc=4173896292"></a></p></li>
+				</ul>
+			</div>
+
+			<!-- arekkuj@gmail.com -->
+			<form action="https://formspree.io/arekkuj@gmail.com" method="POST">
+		        <div class="flex-container">
+
+		          <ul class="flex-column">
+		            <label class="fld-label"><span>Angaben zur Person die, betreut werden soll</span></label>
+		            <li>
+		              <label class="formularz required" for="Betreut Vorname">Vorname</label>
+		              <input type="text" name="Betreut Vorname">
+		            </li>
+
+		            <li>
+		              <label class="formularz required" for="Betreut Nachname">Nachname</label>
+		              <input type="text" name="Betreut Nachname">
+		            </li>
+
+		            <li>
+		              <label class="formularz required" for="Betreut Straße/Nr">Straße/Nr</label>
+		              <input type="text" name="Betreut Straße/Nr">
+		            </li>
+
+		            <li>
+		              <label class="formularz required" for="Betreut PLZ">PLZ</label>
+		              <input type="text" name="Betreut PLZ">
+		            </li>
+
+		            <li>
+		              <label class="formularz required" for="Betreut Ort">Ort</label>
+		              <input type="text" name="Betreut Ort">
+		            </li>
+
+		            <li>
+		              <label class="formularz" for="Betreut Telefon/Nr">Telefon/Nr</label>
+		              <input type="text" name="Betreut Telefon/Nr">
+		            </li>
+
+		            <li>
+		              <label class="formularz" for="Betreut Mobil">Mobil</label>
+		              <input type="text" name="Betreut Mobil">
+		            </li>
+
+		            <li>
+		              <label class="formularz" for="Betreut E-Mail">E-Mail</label>
+		              <input type="email" name="Betreut E-Mail">
+		            </li>
+
+		            <li>
+		              <label class="formularz required" for="Betreut-Geburtsdatum">Geburtsdatum</label>
+		              <input type="text" name="Betreut Geburtsdatum">
+		            </li>
+
+		            <li>
+		              <label class="formularz required" for="Betreut Gewicht-kg">Gewicht (kg)</label>
+		              <input type="text" name="Betreut Gewicht-kg">
+		            </li>
+
+		            <li>
+		              <label class="formularz required" for="Betreut Größe-cm">Größe (cm)</label>
+		              <input type="text" name="Betreut Größe-cm">
+		            </li>
+
+		          </ul>
+
+		          <ul class="flex-column">
+		            <label class="fld-label"><span>Angaben zur Kontaktperson</span></label>
+		            <li>
+		              <label class="formularz required" for="Kontaktperson Vorname">Vorname</label>
+		              <input type="text" name="Kontaktperson Vorname">
+		            </li>
+
+		            <li>
+		              <label class="formularz required" for="Kontaktperson Nachname">Nachname</label>
+		              <input type="text" name="Kontaktperson Nachname">
+		            </li>
+
+		            <li>
+		              <label class="formularz" for="Kontaktperson Straße/Nr">Straße/Nr</label>
+		              <input type="text" name="Kontaktperson Straße/Nr">
+		            </li>
+
+		            <li>
+		              <label class="formularz" for="Kontaktperson PLZ">PLZ</label>
+		              <input type="text" name="Kontaktperson PLZ">
+		            </li>
+
+		            <li>
+		              <label class="formularz required" for="Kontaktperson Ort">Ort</label>
+		              <input type="text" name="Kontaktperson Ort">
+		            </li>
+
+		            <li>
+		              <label class="formularz required" for="Kontaktperson Telefon/Nr">Telefon/Nr</label>
+		              <input type="text" name="Kontaktperson Telefon/Nr">
+		            </li>
+
+		            <li>
+		              <label class="formularz" for="Kontaktperson Mobil">Mobil</label>
+		              <input type="text" name="Kontaktperson Mobil">
+		            </li>
+
+		            <li>
+		              <label class="formularz required" for="Kontaktperson E-Mail">E-Mail</label>
+		              <input type="email" name="Kontaktperson E-Mail">
+		            </li>
+
+		            <li>
+		              <ul class="flex-checkbox-column two-per-row">
+		                <label class="fld-label" style="font-weight: normal"><span>
+		Beziehungsebene zur Person die, betreut werden soll</span></label>
+		                <li>
+		                  <input type="radio" name="Kontaktperson-Beziehungsebene" value="Ehepartner/in">
+		                  <label class="formularz" for="Ehepartner/in">Ehepartner/in</label>
+		                </li>
+		                <li>
+		                  <input type="radio" name="Kontaktperson-Beziehungsebene" value="Tochter/Sohn">
+		                  <label class="formularz" for="Tochter/Sohn">Tochter/Sohn</label>
+		                </li>
+		                <li>
+		                  <input type="radio" name="Kontaktperson-Beziehungsebene" value="Enkel/in">
+		                  <label class="formularz" for="Enkel/in">Enkel/in</label>
+		                </li>
+		                <li>
+		                  <input type="radio" name="Kontaktperson-Beziehungsebene" value="gesetzl.Betreuer">
+		                  <label class="formularz" for="gesetzl.Betreuer">gesetzl. Betreuer</label>
+		                </li>
+		                <li class="one-fourth">
+		                  <input type="radio" name="Kontaktperson-Beziehungsebene" value="Andere">
+		                  <label class="formularz" for="Andere">Andere</label>
+		                </li>
+		                <li class="three-fourths">
+		                  <input type="text" name="Kontaktperson-Andere" class="full">
+		                </li>
+
+		              </ul>
+
+		            </li>
+
+		          </ul>
+
+		          
+
+		          <ul class="flex-checkbox-column four-per-row">
+		          	<label><span>Gesundheitlicher Zustand und Einschränkungen</span></label>
+		          	<span>Diagnosen / Krankheiten</span>
+		          	<li>
+		          		<input type="checkbox" name="Gesundheitlicher-Diagnosen-Gehschwäche">
+		          		<label class="formularz" for="Gesundheitlicher-Diagnosen-Gehschwäche">Gehschwäche</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Gesundheitlicher-Diagnosen-Demenz-Beginn">
+		          		<label class="formularz" for="Gesundheitlicher-Diagnosen-Demenz-Beginn">Demenz Beginn</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Gesundheitlicher-Diagnosen-Asthma">
+		          		<label class="formularz" for="Gesundheitlicher-Diagnosen-Asthma">Asthma</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Gesundheitlicher-Diagnosen-Diabetes">
+		          		<label class="formularz" for="Gesundheitlicher-Diagnosen-Diabetes">Diabetes</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Gesundheitlicher-Diagnosen-Schlaganfall">
+		          		<label class="formularz" for="Gesundheitlicher-Diagnosen-Schlaganfall">Schlaganfall</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Gesundheitlicher-Diagnosen-Demenz">
+		          		<label class="formularz" for="Gesundheitlicher-Diagnosen-Demenz">Demenz</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Gesundheitlicher-Diagnosen-Osteoporose">
+		          		<label class="formularz" for="Gesundheitlicher-Diagnosen-Osteoporose">Osteoporose</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Gesundheitlicher Diagnosen Diabetes Insulinpflichtig">
+		          		<label class="formularz" for="Gesundheitlicher Diagnosen Diabetes Insulinpflichtig">Diabetes Insulinpflichtig</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Gesundheitlicher-Diagnosen-Herzrhythmusstörung">
+		          		<label class="formularz" for="Gesundheitlicher-Diagnosen-Herzrhythmusstörung">Herzrhythmusstörung</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Gesundheitlicher-Diagnosen-Alzheimer">
+		          		<label class="formularz" for="Gesundheitlicher-Diagnosen-Alzheimer">Alzheimer</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Gesundheitlicher-Diagnosen-Rheuma">
+		          		<label class="formularz" for="Gesundheitlicher-Diagnosen-Rheuma">Rheuma</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Gesundheitlicher-Diagnosen-HIV">
+		          		<label class="formularz" for="Gesundheitlicher-Diagnosen-HIV">HIV</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Gesundheitlicher-Diagnosen-Herzinsuffizienz">
+		          		<label class="formularz" for="Gesundheitlicher-Diagnosen-Herzinsuffizienz">Herzinsuffizienz</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Gesundheitlicher-Diagnosen-Depression">
+		          		<label class="formularz" for="Gesundheitlicher-Diagnosen-Depression">Depression</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Gesundheitlicher-Diagnosen-COPD">
+		          		<label class="formularz" for="Gesundheitlicher-Diagnosen-COPD">COPD</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Gesundheitlicher-Diagnosen-chronische-Durchfälle">
+		          		<label class="formularz" for="Gesundheitlicher-Diagnosen-chronische-Durchfälle">chronische Durchfälle</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Gesundheitlicher-Diagnosen-Hypertonie">
+		          		<label class="formularz" for="Gesundheitlicher-Diagnosen-Hypertonie">Hypertonie</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Gesundheitlicher-Diagnosen-Parkinson">
+		          		<label class="formularz" for="Gesundheitlicher-Diagnosen-Parkinson">Parkinson</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Gesundheitlicher-Diagnosen-Inkontinenz">
+		          		<label class="formularz" for="Gesundheitlicher-Diagnosen-Inkontinenz">Inkontinenz</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Gesundheitlicher-Diagnosen-Tumor">
+		          		<label class="formularz" for="Gesundheitlicher-Diagnosen-Tumor">Tumor</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Gesundheitlicher-Diagnosen-Herzinfarkt">
+		          		<label class="formularz" for="Gesundheitlicher-Diagnosen-Herzinfarkt">Herzinfarkt</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Gesundheitlicher-Diagnosen-Multiple Sklerose">
+		          		<label class="formularz" for="Gesundheitlicher-Diagnosen-Multiple Sklerose">Multiple Sklerose</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Gesundheitlicher-Diagnosen-Stoma">
+		          		<label class="formularz" for="Gesundheitlicher-Diagnosen-Stoma">Stoma</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Gesundheitlicher-Diagnosen-Atmungsprobleme">
+		          		<label class="formularz" for="Gesundheitlicher-Diagnosen-Atmungsprobleme">Atmungsprobleme</label>
+		          	</li>
+		          	<ul class="flex-checkbox-column twentyfive-seventyfive">
+		          		<li>
+		          			<input type="checkbox" name="Gesundheitlicher Diagnosen Allergien, z.B. Nahrungsallergien">
+		          			<label class="formularz" for="Gesundheitlicher Diagnosen Allergien, z.B. Nahrungsallergien">Allergien, z.B. Nahrungsallergien</label>
+		          		</li>
+		          		<li>
+		          			<input type="text" name="Gesundheitlicher Diagnosen Allergien, z.B. Nahrungsallergien TEXT">
+		          		</li>
+		          		<li>
+		          			<input type="checkbox" name="Gesundheitlicher Diagnosen ansteckende Krankheiten / welche?">
+		          			<label class="formularz" for="Gesundheitlicher Diagnosen ansteckende Krankheiten / welche?">ansteckende Krankheiten / welche?</label>
+		          		</li>
+		          		<li>
+		          			<input type="text" name="Gesundheitlicher Diagnosen ansteckende Krankheiten / welche? TEXT">
+		          		</li>
+		          		<li>
+		          			<input type="checkbox" name="Gesundheitlicher Diagnosen Sonstige">
+		          			<label class="formularz" for="Gesundheitlicher Diagnosen Sonstige">Sonstige</label>
+		          		</li>
+		          		<li>
+		          			<input type="text" name="Gesundheitlicher Diagnosen Sonstige TEXT">
+		          		</li>
+		          	</ul>
+		          </ul>
+
+		          <ul class="flex-checkbox-column">
+		          	<span>Kommunikationseinschränkungen</span>
+
+		          	<li>
+		          	</li>
+
+		          	<li>
+		          		<label class="formularz">keine</label>
+		          	</li>
+
+		          	<li>
+		          		<label class="formularz">mäßig</label>
+		          	</li>
+
+		          	<li>
+		          		<label class="formularz">massiv</label>
+		          	</li>
+
+		          	<li>
+		          		<label class="formularz">Sprache</label>
+		          	</li>
+
+		          	<li>
+		          		<input type="radio" name="Kommunikationseinschränkungen Sprache" value="Kommunikationseinschränkungen keine Sprache">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Kommunikationseinschränkungen Sprache" value="Kommunikationseinschränkungen mäßig Sprache">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Kommunikationseinschränkungen Sprache" value="Kommunikationseinschränkungen massiv Sprache">
+		          	</li>
+
+		          	<li>
+		          		<label class="formularz">Sehkraft</label>
+		          	</li>
+
+		          	<li>
+		          		<input type="radio" name="Kommunikationseinschränkungen Sehkraft" value="Kommunikationseinschränkungen keine Sehkraft">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Kommunikationseinschränkungen Sehkraft" value="Kommunikationseinschränkungen mäßig Sehkraft">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Kommunikationseinschränkungen Sehkraft" value="Kommunikationseinschränkungen massiv Sehkraft">
+		          	</li>
+
+		          	<li>
+		          		<label class="formularz">Hörvermögen</label>
+		          	</li>
+
+		          	<li>
+		          		<input type="radio" name="Kommunikationseinschränkungen Hörvermögen" value="Kommunikationseinschränkungen keine Hörvermögen">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Kommunikationseinschränkungen Hörvermögen" value="Kommunikationseinschränkungen mäßig Hörvermögen">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Kommunikationseinschränkungen Hörvermögen" value="Kommunikationseinschränkungen massiv Hörvermögen">
+		          	</li>
+
+		          </ul>
+
+
+		          <ul class="flex-checkbox-column">
+		          	<span>Orientierungseinschränkungen</span>
+		          	<li></li>
+
+		          	<li>
+		          		<label class="formularz">keine</label>
+		          	</li>
+		          	<li>
+		          		<label class="formularz">gelegentlich</label>
+		          	</li>
+		          	<li>
+		          		<label class="formularz">massiv</label>
+		          	</li>
+
+		          	<li>
+		          		<label class="formularz">Zeitlich</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Orientierungseinschränkungen Zeitlich" value="Orientierungseinschränkungen keine Zeitlich">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Orientierungseinschränkungen Zeitlich" value="Orientierungseinschränkungen gelegentlich Zeitlich">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Orientierungseinschränkungen Zeitlich" value="Orientierungseinschränkungen massiv Zeitlich">
+		          	</li>
+
+		          	<li>
+		          		<label class="formularz">Örtlich</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Orientierungseinschränkungen Örtlich" value="Orientierungseinschränkungen keine Örtlich">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Orientierungseinschränkungen Örtlich" value="Orientierungseinschränkungen gelegentlich Örtlich">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Orientierungseinschränkungen Örtlich" value="Orientierungseinschränkungen massiv Örtlich">
+		          	</li>
+
+		          	<li>
+		          		<label class="formularz">Person bezogen</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Orientierungseinschränkungen Person bezogen" value="Orientierungseinschränkungen keine Person bezogen">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Orientierungseinschränkungen Person bezogen" value="Orientierungseinschränkungen gelegentlich Person bezogen">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Orientierungseinschränkungen Person bezogen" value="Orientierungseinschränkungen massiv Person bezogen">
+		          	</li>
+
+		          	<li>
+		          		<label class="formularz">Situativ</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Orientierungseinschränkungen Situativ" value="Orientierungseinschränkungen keine Situativ">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Orientierungseinschränkungen Situativ" value="Orientierungseinschränkungen gelegentlich Situativ">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Orientierungseinschränkungen Situativ" value="Orientierungseinschränkungen massiv Situativ">
+		          	</li>
+		          </ul>
+
+		          <ul class="flex-checkbox-column">
+		          	<span>Motorik / Bewegungsfähigkeiten</span>
+		          	<li></li>
+		          	<li>
+		          		<label class="formularz">Selbständig</label>
+		          	</li>
+		          	<li>
+		          		<label class="formularz">teilweise selbständig</label>
+		          	</li>
+		          	<li>
+		          		<label class="formularz">unselbständig</label>
+		          	</li>
+
+		          	<li>
+		          		<label class="formularz">Gehen</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Motorik Gehen" value="Motorik Selbständig Gehen">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Motorik Gehen" value="Motorik teilweise selbständig Gehen">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Motorik Gehen" value="Motorik unselbständig Gehen">
+		          	</li>
+
+		          	<li>
+		          		<label class="formularz">Stehen</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Motorik Stehen" value="Motorik Selbständig Stehen">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Motorik Stehen" value="Motorik teilweise selbständig Stehen">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Motorik Stehen" value="Motorik unselbständig Stehen">
+		          	</li>
+
+		          	<li>
+		          		<label class="formularz">Hinsetzen/ Aufstehen</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Motorik Hinsetzen/ Aufstehen" value="Motorik Selbständig Hinsetzen/ Aufstehen">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Motorik Hinsetzen/ Aufstehen" value="Motorik teilweise selbständig Hinsetzen/ Aufstehen">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Motorik Hinsetzen/ Aufstehen" value="Motorik unselbständig Hinsetzen/ Aufstehen">
+		          	</li>
+
+		          	<li>
+		          		<label class="formularz">Hinlegen/ Aufstehen</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Motorik Hinlegen/ Aufstehen" value="Motorik Selbständig Hinlegen/ Aufstehen">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Motorik Hinlegen/ Aufstehen" value="Motorik teilweise selbständig Hinlegen/ Aufstehen">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Motorik Hinlegen/ Aufstehen" value="Motorik unselbständig Hinlegen/ Aufstehen">
+		          	</li>
+
+		          	<li>
+		          		<label class="formularz">Transfer/ z.B. Bett/ Rollstuhl</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Motorik Transfer/ z.B. Bett/ Rollstuhl" value="Motorik Selbständig Transfer/ z.B. Bett/ Rollstuhl">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Motorik Transfer/ z.B. Bett/ Rollstuhl" value="Motorik teilweise selbständig Transfer/ z.B. Bett/ Rollstuhl">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Motorik Transfer/ z.B. Bett/ Rollstuhl" value="Motorik unselbständig Transfer/ z.B. Bett/ Rollstuhl">
+		          	</li>
+
+		          	<li>
+		          		<label class="formularz">An-/ Auskleiden</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Motorik An-/ Auskleiden" value="Motorik Selbständig An-/ Auskleiden">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Motorik An-/ Auskleiden" value="Motorik teilweise selbständig An-/ Auskleiden">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Motorik An-/ Auskleiden" value="Motorik unselbständig An-/ Auskleiden">
+		          	</li>
+
+		          	<li>
+		          		<label class="formularz">Körperpflege</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Motorik Körperpflege" value="Motorik Selbständig Körperpflege">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Motorik Körperpflege" value="Motorik teilweise selbständig Körperpflege">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Motorik Körperpflege" value="Motorik unselbständig Körperpflege">
+		          	</li>
+
+		          	<li>
+		          		<label class="formularz">Toilettengang</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Motorik Toilettengang" value="Motorik Selbständig Toilettengang">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Motorik Toilettengang" value="Motorik teilweise selbständig Toilettengang">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Motorik Toilettengang" value="Motorik unselbständig Toilettengang">
+		          	</li>
+		          </ul>
+
+		          <ul class="flex-checkbox-column">
+		          	<span>Bettlägerig</span>
+		          	<li></li>
+		          	<li>
+		          		<label class="formularz">ja</label>
+		          	</li>
+		          	<li>
+		          		<label class="formularz">nein</label>
+		          	</li>
+		          	<li></li>
+
+		          	<li>
+		          		<label class="formularz">Bettlägerig</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Bettlägerig" value="Bettlägerig ja">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Bettlägerig" value="Bettlägerig nein">
+		          	</li>
+		          	<li></li>
+
+		          	<li>
+		          		<label class="formularz">muss gelagert werden</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Bettlägerig muss gelagert werden" value="muss gelagert werden ja">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Bettlägerig muss gelagert werden" value="muss gelagert werden nein">
+		          	</li>
+		          	<li></li>
+
+		          	<ul class="flex-checkbox-column twentyfive-seventyfive">
+			          	<li>
+			          		<label class="formularz">wenn ja, wie oft</label>
+			          	</li>
+			          	<li>
+			          		<input type="text" name="Bettlägerig wenn ja, wie oft">
+			          	</li>
+		          	</ul>
+		          	
+		          </li>
+		          </ul>
+
+		          <ul class="flex-checkbox-column">
+		          	<span>Essen/ Trinken</span>
+		          	<li></li>
+		          	<li>
+		          		<label class="formularz">Selbständig</label>
+		          	</li>
+		          	<li>
+		          		<label class="formularz">teilweise selbständig</label>
+		          	</li>
+		          	<li>
+		          		<label class="formularz">unselbständig</label>
+		          	</li>
+
+		          	<li>
+		          		<label class="formularz">Essen</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Essen" value="Selbständig Essen">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Essen" value="teilweise selbständig Essen">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Essen" value="unselbständig Essen">
+		          	</li>
+
+		          	<li>
+		          		<label class="formularz">Trinken</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Trinken" value="Selbständig Trinken">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Trinken" value="teilweise selbständig Trinken">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Trinken" value="unselbständig Trinken">
+		          	</li>
+
+		          	<ul class="flex-checkbox-column twentyfive-seventyfive">
+		          		<li>
+		          			<label class="formularz">Kostform / Diät</label>
+		          		</li>
+		          		<li>
+		          			<input type="text" name="Essen/Trinken Kostform / Diät">
+		          		</li>
+		          	</ul>
+
+		          	<ul class="flex-checkbox-column">
+		          		<li>
+		          			<label class="formularz">PEG Sonde</label>
+		          		</li>
+		          		<li>
+			          		<input type="radio" name="Essen/Trinken PEG Sonde" value="Essen/Trinken PEG Sonde ja">
+			          		<label class="formularz" for="Essen/Trinken PEG Sonde ja">ja</label>
+			          	</li>
+			          	<li>
+			          		<input type="radio" name="Essen/Trinken PEG Sonde" value="Essen/Trinken PEG Sonde nein">
+			          		<label class="formularz" for="Essen/Trinken PEG Sonde nein">nein</label>
+			          	</li>
+			          	<li></li>
+		          	</ul>
+		          </ul>
+
+		          <ul class="flex-checkbox-column">
+		          	<span>Hautzustand</span>
+		          	<li>
+		          		<label class="formularz">Hauterkrankungen</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Hautzustand Hauterkrankungen" value="Hautzustand Hauterkrankungen ja">
+		          		<label class="formularz" for="Hautzustand Hauterkrankungen ja">ja</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Hautzustand Hauterkrankungen" value="Hautzustand Hauterkrankungen nein">
+		          		<label class="formularz" for="Hautzustand Hauterkrankungen nein">nein</label>
+		          	</li>
+		          	<li></li>
+
+		          	<li>
+		          		<label class="formularz">wenn ja:</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Hautzustand wenn ja:" value="Hautzustand wenn ja: akut">
+		          		<label class="formularz" for="Hautzustand wenn ja: akut">akut</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Hautzustand wenn ja:" value="Hautzustand wenn ja: chronisch">
+		          		<label class="formularz" for="Hautzustand wenn ja: chronisch">chronisch</label>
+		          	</li>
+		          	<li></li>
+
+
+		          	<li>
+		          		<label class="formularz">Dekubitus</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Hautzustand Dekubitus" value="Hautzustand Dekubitus nein">
+		          		<label class="formularz" for="Hautzustand Dekubitus nein">nein</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Hautzustand Dekubitus" value="Hautzustand Dekubitus ja / wo">
+		          		<label class="formularz" for="Hautzustand Dekubitus ja / wo">ja / wo</label>
+		          	</li>
+		          	<li>
+		          		<input type="text" name="Hautzustand Dekubitus TEXT">
+		          	</li>
+
+		          	<li>
+		          		<label class="formularz">Dekubitus Grad</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Hautzustand Dekubitus Grad" value="Hautzustand Dekubitus Grad 1">
+		          		<label class="formularz" for="Hautzustand Dekubitus Grad 1">1.Grad</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Hautzustand Dekubitus Grad" value="Hautzustand Dekubitus Grad 2">
+		          		<label class="formularz" for="Hautzustand Dekubitus Grad 2">2.Grad</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Hautzustand Dekubitus Grad" value="Hautzustand Dekubitus Grad 3">
+		          		<label class="formularz" for="Hautzustand Dekubitus Grad 3">3.Grad</label>
+		          	</li>
+		          </ul>
+
+		          <ul class="flex-checkbox-column">
+		          	<span>Ausscheidungen</span>
+		          	<li></li>
+		          	<li>
+		          		<label class="formularz">nein</label>
+		          	</li>
+		          	<li>
+		          		<label class="formularz">gelegentlich</label>
+		          	</li>
+		          	<li>
+		          		<label class="formularz">ja</label>
+		          	</li>
+
+		          	<li>
+			          	<input type="checkbox" name="Ausscheidungen Urininkontinenz">
+			          	<label class="formularz" for="Ausscheidungen Urininkontinenz">Urininkontinenz</label>
+			        </li>
+			        <li>
+			        	<input type="radio" name="Ausscheidungen Urininkontinenz" value="Ausscheidungen Urininkontinenz nein">
+			        </li>
+			        <li>
+			        	<input type="radio" name="Ausscheidungen Urininkontinenz" value="Ausscheidungen Urininkontinenz gelegentlich">
+			        </li>
+			        <li>
+			        	<input type="radio" name="Ausscheidungen Urininkontinenz" value="Ausscheidungen Urininkontinenz ja">
+			        </li>
+
+			        <li>
+		          		<input type="checkbox" name="Ausscheidungen Stuhlinkontinenz">
+			          	<label class="formularz" for="Ausscheidungen Stuhlinkontinenz">Stuhlinkontinenz</label>
+		          	</li>
+		          	<li>
+			        	<input type="radio" name="Ausscheidungen Stuhlinkontinenz" value="Ausscheidungen Stuhlinkontinenz nein">
+			        </li>
+			        <li>
+			        	<input type="radio" name="Ausscheidungen Stuhlinkontinenz" value="Ausscheidungen Stuhlinkontinenz gelegentlich">
+			        </li>
+			        <li>
+			        	<input type="radio" name="Ausscheidungen Stuhlinkontinenz" value="Ausscheidungen Stuhlinkontinenz ja">
+			        </li>
+
+		          	<ul class="flex-checkbox-column">
+		          		<li>
+			          		<label class="formularz red">Hilfsmittel bei Inkontinenz</label>
+			          	</li>
+			          	<li>
+			          		<input type="checkbox" name="Ausscheidungen Blasenkatheter">
+			          		<label class="formularz" for="Ausscheidungen Blasenkatheter">Blasenkatheter</label>
+			          	</li>
+			          	<li>
+			          		<input type="checkbox" name="Ausscheidungen Suprapubischer Katheter">
+			          		<label class="formularz" for="Ausscheidungen Suprapubischer Katheter">Suprapubischer Katheter</label>
+			          	</li>
+			          	<li>
+			          		<input type="checkbox" name="Ausscheidungen Urinflasche">
+			          		<label class="formularz" for="Ausscheidungen Urinflasche">Urinflasche</label>
+			          	</li>
+
+			          	<li></li>
+			          	<li>
+			          		<input type="checkbox" name="Ausscheidungen Windeln">
+			          		<label class="formularz" for="Ausscheidungen Windeln">Windeln</label>
+			          	</li>
+			          	<li>
+			          		<input type="checkbox" name="Ausscheidungen Vorlagen">
+			          		<label class="formularz" for="Ausscheidungen Vorlagen">Vorlagen</label>
+			          	</li>
+			          	<li></li>
+		          	</ul>
+		          </ul>
+
+		          <ul class="flex-checkbox-column four-per-row">
+		          	<span>Hilfsmittel / allgemein</span>
+		          	<li>
+		          		<input type="checkbox" name="Hilfsmittel / allgemein Dekubitusmatratze">
+		          		<label class="formularz" for="Hilfsmittel / allgemein Dekubitusmatratze">Dekubitusmatratze</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Hilfsmittel / allgemein Rollator">
+		          		<label class="formularz" for="Hilfsmittel / allgemein Rollator">Rollator</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Hilfsmittel / allgemein Pflegebett">
+		          		<label class="formularz" for="Hilfsmittel / allgemein Pflegebett">Pflegebett</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Hilfsmittel / allgemein Toilettensitzerhöhung">
+		          		<label class="formularz" for="Hilfsmittel / allgemein Toilettensitzerhöhung">Toilettensitzerhöhung</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Hilfsmittel / allgemein Patientenlifter">
+		          		<label class="formularz" for="Hilfsmittel / allgemein Patientenlifter">Patientenlifter</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Hilfsmittel / allgemein Rollstuhl">
+		          		<label class="formularz" for="Hilfsmittel / allgemein Rollstuhl">Rollstuhl</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Hilfsmittel / allgemein Toilettenstuhl">
+		          		<label class="formularz" for="Hilfsmittel / allgemein Toilettenstuhl">Toilettenstuhl</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Hilfsmittel / allgemein Badewannenlifter">
+		          		<label class="formularz" for="Hilfsmittel / allgemein Badewannenlifter">Badewannenlifter</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Hilfsmittel / allgemein Gehstock">
+		          		<label class="formularz" for="Hilfsmittel / allgemein Gehstock">Gehstock</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Hilfsmittel / allgemein Treppenlift">
+		          		<label class="formularz" for="Hilfsmittel / allgemein Treppenlift">Treppenlift</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Hilfsmittel / allgemein Duschstuhl/ Hocker">
+		          		<label class="formularz" for="Hilfsmittel / allgemein Duschstuhl/ Hocker">Duschstuhl/ Hocker</label>
+		          	</li>
+		          	<li></li>
+		          	<ul class="flex-checkbox-column twentyfive-seventyfive">
+		          		<li>
+			          		<input type="checkbox" name="Hilfsmittel / allgemein sonstiges:">
+			          		<label class="formularz" for="Hilfsmittel / allgemein sonstiges:">sonstiges:</label>
+			          	</li>
+			          	<li>
+			          		<input type="text" name="Hilfsmittel / allgemein sonstiges: TEXT">
+			          	</li>
+			          	<li>
+			          		<input type="checkbox" name="Hilfsmittel / allgemein Protesen, welche:">
+			          		<label class="formularz" for="Hilfsmittel / allgemein Protesen, welche:">Protesen, welche:</label>
+			          	</li>
+			          	<li>
+			          		<input type="text" name="Hilfsmittel / allgemein Protesen, welche: TEXT">
+			          	</li>
+		          	</ul>
+		          	
+		          </ul>
+
+		          <ul class="flex-checkbox-column">
+		          	<span>Nachtruhe / Nachteinsätze</span>
+		          	<li>
+		          		<label class="formularz">Schläft durch?</label>
+		          	</li>
+		          	<li></li>
+		          	<li>
+		          		<input type="radio" name="Nachtruhe / Nachteinsätze Schläft durch?" value="Nachtruhe / Nachteinsätze Schläft durch? ja">
+		          		<label class="formularz" for="Nachtruhe / Nachteinsätze Schläft durch? ja">ja</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Nachtruhe / Nachteinsätze Schläft durch?" value="Nachtruhe / Nachteinsätze Schläft durch? Nein">
+		          		<label class="formularz" for="Nachtruhe / Nachteinsätze Schläft durch? Nein">Nein</label>
+		          	</li>
+
+		          	<li class="two-fourths">
+		          		<label class="formularz">wenn nein; sind Nachteinsätze notwendig</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Nachtruhe / Nachteinsätze wenn nein; sind Nachteinsätze notwendig" value="Nachtruhe / Nachteinsätze wenn nein; sind Nachteinsätze notwendig ja">
+		          		<label class="formularz" for="Nachtruhe / Nachteinsätze wenn nein; sind Nachteinsätze notwendig ja">ja</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Nachtruhe / Nachteinsätze wenn nein; sind Nachteinsätze notwendig" value="Nachtruhe / Nachteinsätze wenn nein; sind Nachteinsätze notwendig Nein">
+		          		<label class="formularz" for="Nachtruhe / Nachteinsätze wenn nein; sind Nachteinsätze notwendig Nein">Nein</label>
+		          	</li>
+
+		          	<li>
+		          		<label class="formularz">ev. notwendige Nachteinsätze</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Nachtruhe / Nachteinsätze ev. notwendige Nachteinsätze" value="Nachtruhe / Nachteinsätze ev. notwendige Nachteinsätze 1 -2 mal">
+		          		<label class="formularz" for="Nachtruhe / Nachteinsätze ev. notwendige Nachteinsätze 1 -2 mal">1 -2 mal</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Nachtruhe / Nachteinsätze ev. notwendige Nachteinsätze" value="Nachtruhe / Nachteinsätze ev. notwendige Nachteinsätze 3 - 4 mal">
+		          		<label class="formularz" for="Nachtruhe / Nachteinsätze ev. notwendige Nachteinsätze 3 - 4 mal">3 - 4 mal</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Nachtruhe / Nachteinsätze ev. notwendige Nachteinsätze" value="Nachtruhe / Nachteinsätze ev. notwendige Nachteinsätze mehr als 4">
+		          		<label class="formularz" for="Nachtruhe / Nachteinsätze ev. notwendige Nachteinsätze mehr als 4">mehr als 4</label>
+		          	</li>
+		          </ul>
+
+		          <ul class="flex-checkbox-column">
+		          	<span>Pflegegrad</span>
+		          	<span class="small-text">In welchen Pflegegrad wurde die betreute Person eingestuft?</span>
+		          	<ul class="flex-row">
+		          		<li>
+		          			<input type="radio" name="Pflegegrad eingestuft" value="Pflegegrad keinen eingestuft">
+		          			<label class="formularz" for="Pflegegrad keinen eingestuft">keinen</label>
+		          		</li>
+		          		<li>
+		          			<input type="radio" name="Pflegegrad eingestuft" value="Pflegegrad eingestuft 1">
+		          			<label class="formularz" for="Pflegegrad eingestuft 1">1</label>
+		          		</li>
+		          		<li>
+		          			<input type="radio" name="Pflegegrad eingestuft" value="Pflegegrad eingestuft 2">
+		          			<label class="formularz" for="Pflegegrad eingestuft 2">2</label>
+		          		</li>
+		          		<li>
+		          			<input type="radio" name="Pflegegrad eingestuft" value="Pflegegrad eingestuft 3">
+		          			<label class="formularz" for="Pflegegrad eingestuft 3">3</label>
+		          		</li>
+		          		<li>
+		          			<input type="radio" name="Pflegegrad eingestuft" value="Pflegegrad eingestuft 4">
+		          			<label class="formularz" for="Pflegegrad eingestuft 4">4</label>
+		          		</li>
+		          		<li>
+		          			<input type="radio" name="Pflegegrad eingestuft" value="Pflegegrad eingestuft 5">
+		          			<label class="formularz" for="Pflegegrad eingestuft 5">5</label>
+		          		</li>
+		          	</ul>
+		          	<span class="small-text">Wurde eine Erst- bzw. Höherstufung beantragt</span>
+		          	<ul class="flex-row">
+		          		<li>
+		          			<input type="radio" name="Pflegegrad Wurde eine Erst- bzw. Höherstufung beantragt" value="Pflegegrad Wurde eine Erst- bzw. Höherstufung beantragt: nein">
+		          			<label class="formularz" for="Pflegegrad Wurde eine Erst- bzw. Höherstufung beantragt: nein">nein</label>
+		          		</li>
+		          		<li>
+		          			<input type="radio" name="Pflegegrad Wurde eine Erst- bzw. Höherstufung beantragt" value="Pflegegrad Wurde eine Erst- bzw. Höherstufung beantragt: ja">
+		          			<label class="formularz" for="Pflegegrad Wurde eine Erst- bzw. Höherstufung beantragt: ja">ja</label>
+		          		</li>
+		          		<li>
+		          			<input type="radio" name="Pflegegrad Wurde eine Erst- bzw. Höherstufung beantragt" value="Pflegegrad Wurde eine Erst- bzw. Höherstufung beantragt 1">
+		          			<label class="formularz" for="Pflegegrad Wurde eine Erst- bzw. Höherstufung beantragt 1">1</label>
+		          		</li>
+		          		<li>
+		          			<input type="radio" name="Pflegegrad Wurde eine Erst- bzw. Höherstufung beantragt" value="Pflegegrad Wurde eine Erst- bzw. Höherstufung beantragt 2">
+		          			<label class="formularz" for="Pflegegrad Wurde eine Erst- bzw. Höherstufung beantragt 2">2</label>
+		          		</li>
+		          		<li>
+		          			<input type="radio" name="Pflegegrad Wurde eine Erst- bzw. Höherstufung beantragt" value="Pflegegrad Wurde eine Erst- bzw. Höherstufung beantragt 3">
+		          			<label class="formularz" for="Pflegegrad Wurde eine Erst- bzw. Höherstufung beantragt 3">3</label>
+		          		</li>
+		          		<li>
+		          			<input type="radio" name="Pflegegrad Wurde eine Erst- bzw. Höherstufung beantragt" value="Pflegegrad Wurde eine Erst- bzw. Höherstufung beantragt 4">
+		          			<label class="formularz" for="Pflegegrad Wurde eine Erst- bzw. Höherstufung beantragt 4">4</label>
+		          		</li>
+		          		<li>
+		          			<input type="radio" name="Pflegegrad Wurde eine Erst- bzw. Höherstufung beantragt" value="Pflegegrad Wurde eine Erst- bzw. Höherstufung beantragt 5">
+		          			<label class="formularz" for="Pflegegrad Wurde eine Erst- bzw. Höherstufung beantragt 5">5</label>
+		          		</li>
+		          	</ul>
+
+		          <ul class="flex-checkbox-column">
+		          	<span>an der Betreuung sind beteiligt:</span>
+		          	<li>
+		          		<label class="formularz"><b>Pflegedienst</b></label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="an der Betreuung sind beteiligt: Pflegedienst" value="ja">
+		          		<label class="formularz" for="ja">ja</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="an der Betreuung sind beteiligt: Pflegedienst" value="Nein">
+		          		<label class="formularz" for="Nein">Nein</label>
+		          	</li>
+		          	<li></li>
+		          </ul>
+		          <ul class="flex-checkbox-column twentyfive-seventyfive">
+		          	<li>
+		          		<label class="formularz">Welche Aufgaben werden vom Pflegedienst übernommen?</label>
+		          	</li>
+		          	<li>
+		          		<textarea class="full" name="Pflegedienst: Welche Aufgaben werden vom Pflegedienst übernommen? TEXT"></textarea>
+		          	</li>
+		          </ul>
+		          <ul class="flex-checkbox-column">
+		          	<li>
+		          		<label class="formularz">Wird der Pflegedienst auch zukünftig in Anspruch genommen?</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Wird der Pflegedienst auch zukünftig in Anspruch genommen?" value="ja">
+		          		<label class="formularz" for="ja">ja</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Wird der Pflegedienst auch zukünftig in Anspruch genommen?" value="Nein">
+		          		<label class="formularz" for="Nein">Nein</label>
+		          	</li>
+		          	<li></li>
+		          </ul>
+		          <ul class="flex-checkbox-column twentyfive-seventyfive">
+		          	<li>
+		          		<label class="formularz"><b>sonstiges:</b></label>
+		          	</li>
+		          	<li>
+		          		<textarea class="full" name="Pflegedienst: sonstiges: TEXT"></textarea>
+		          	</li>
+		          </ul>
+
+		          <ul class="flex-checkbox-column four-per-row">
+		          	<label class="fld-label"><span>Wohnsituation / Rahmenbedingungen</span></label>
+		          	<span>Wohnlage</span>
+		          	<li>
+		          		<input type="checkbox" name="Wohnsituation / Rahmenbedingungen Wohnlage Großstadt-Zentral">
+		          		<label class="formularz" for="Wohnsituation / Rahmenbedingungen Wohnlage Großstadt-Zentral">Großstadt-Zentral</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Wohnsituation / Rahmenbedingungen Wohnlage Großstadt-Rand">
+		          		<label class="formularz" for="Wohnsituation / Rahmenbedingungen Wohnlage Großstadt-Rand">Großstadt-Rand</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Wohnsituation / Rahmenbedingungen Wohnlage Kleinstadt">
+		          		<label class="formularz" for="Wohnsituation / Rahmenbedingungen Wohnlage Kleinstadt">Kleinstadt</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Wohnsituation / Rahmenbedingungen Wohnlage Dorf">
+		          		<label class="formularz" for="Wohnsituation / Rahmenbedingungen Wohnlage Dorf">Dorf</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Wohnsituation / Rahmenbedingungen Wohnlage Ländlich">
+		          		<label class="formularz" for="Wohnsituation / Rahmenbedingungen Wohnlage Ländlich">Ländlich</label>
+		          	</li>
+		          </ul>
+
+		          <ul class="flex-checkbox-column four-per-row">
+		          	<span>Wohnumgebung</span>
+		          	<li>
+		          		<input type="checkbox" name="Wohnsituation / Rahmenbedingungen Wohnumgebung Einfamilienhaus">
+		          		<label class="formularz" for="Wohnsituation / Rahmenbedingungen Wohnumgebung Einfamilienhaus">Einfamilienhaus</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Wohnsituation / Rahmenbedingungen Wohnumgebung Zweifamilienhaus">
+		          		<label class="formularz" for="Wohnsituation / Rahmenbedingungen Wohnumgebung Zweifamilienhaus">Zweifamilienhaus</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Wohnsituation / Rahmenbedingungen Wohnumgebung Wohnung">
+		          		<label class="formularz" for="Wohnsituation / Rahmenbedingungen Wohnumgebung Wohnung">Wohnung</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Wohnsituation / Rahmenbedingungen Wohnumgebung Sonstiges">
+		          		<label class="formularz" for="Wohnsituation / Rahmenbedingungen Wohnumgebung Sonstiges">Sonstiges</label>
+		          	</li>
+		          </ul>
+
+		          <ul class="flex-checkbox-column four-per-row">
+		          	<span>Der Betreuungskraft steht zur Verfügung</span>
+		          	<li>
+		          		<input type="checkbox" name="Wohnsituation / Rahmenbedingungen Der Betreuungskraft steht zur Verfügung ein Zimmer">
+		          		<label class="formularz" for="Wohnsituation / Rahmenbedingungen Der Betreuungskraft steht zur Verfügung ein Zimmer">ein Zimmer</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Wohnsituation / Rahmenbedingungen Der Betreuungskraft steht zur Verfügung mehr als ein Zimmer">
+		          		<label class="formularz" for="Wohnsituation / Rahmenbedingungen Der Betreuungskraft steht zur Verfügung mehr als ein Zimmer">mehr als ein Zimmer</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Wohnsituation / Rahmenbedingungen Der Betreuungskraft steht zur Verfügung TV">
+		          		<label class="formularz" for="Wohnsituation / Rahmenbedingungen Der Betreuungskraft steht zur Verfügung TV">TV</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Wohnsituation / Rahmenbedingungen Der Betreuungskraft steht zur Verfügung Radio">
+		          		<label class="formularz" for="Wohnsituation / Rahmenbedingungen Der Betreuungskraft steht zur Verfügung Radio">Radio</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Wohnsituation / Rahmenbedingungen Der Betreuungskraft steht zur Verfügung eigenes Bad">
+		          		<label class="formularz" for="Wohnsituation / Rahmenbedingungen Der Betreuungskraft steht zur Verfügung eigenes Bad">eigenes Bad</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Wohnsituation / Rahmenbedingungen Der Betreuungskraft steht zur Verfügung Bad (Mitbenutzung)">
+		          		<label class="formularz" for="Wohnsituation / Rahmenbedingungen Der Betreuungskraft steht zur Verfügung Bad (Mitbenutzung)">Bad (Mitbenutzung)</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Wohnsituation / Rahmenbedingungen Der Betreuungskraft steht zur Verfügung Telefonnutzung">
+		          		<label class="formularz" for="Wohnsituation / Rahmenbedingungen Der Betreuungskraft steht zur Verfügung Telefonnutzung">Telefonnutzung</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Wohnsituation / Rahmenbedingungen Der Betreuungskraft steht zur Verfügung Internet (wichtig!)">
+		          		<label class="formularz" for="Wohnsituation / Rahmenbedingungen Der Betreuungskraft steht zur Verfügung Internet (wichtig!)">Internet (wichtig!)</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Wohnsituation / Rahmenbedingungen Der Betreuungskraft steht zur Verfügung Internet kann eingerichtet werden (Wichtig!)">
+		          		<label class="formularz" for="Wohnsituation / Rahmenbedingungen Der Betreuungskraft steht zur Verfügung Internet kann eingerichtet werden (Wichtig!)">Internet kann eingerichtet werden (Wichtig!)</label>
+		          	</li>
+		          </ul>
+
+		          <ul class="flex-checkbox-column four-per-row">
+		          	<span>Einkaufsmöglichkeiten (zu Fuß erreichbar)</span>
+		          	<li>
+		          		<input type="radio" name="Wohnsituation / Rahmenbedingungen Einkaufsmöglichkeiten (zu Fuß erreichbar)" value="bis 5 min">
+		          		<label class="formularz" for="bis 5 min">bis 5 min</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Wohnsituation / Rahmenbedingungen Einkaufsmöglichkeiten (zu Fuß erreichbar)" value="bis 10 min">
+		          		<label class="formularz" for="bis 10 min">bis 10 min</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Wohnsituation / Rahmenbedingungen Einkaufsmöglichkeiten (zu Fuß erreichbar)" value="bis 15 min">
+		          		<label class="formularz" for="bis 15 min">bis 15 min</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Wohnsituation / Rahmenbedingungen Einkaufsmöglichkeiten (zu Fuß erreichbar)" value="mehr als 15 min">
+		          		<label class="formularz" for="mehr als 15 min">mehr als 15 min</label>
+		          	</li>
+		          </ul>
+
+		          <ul class="flex-checkbox-column four-per-row">
+		          	<span>Öffentliche Verkehrsmittel (zu Fuß erreichbar)</span>
+		          	<li>
+		          		<input type="radio" name="Wohnsituation / Rahmenbedingungen Öffentliche Verkehrsmittel (zu Fuß erreichbar)" value="bis 5 min">
+		          		<label class="formularz" for="bis 5 min">bis 5 min</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Wohnsituation / Rahmenbedingungen Öffentliche Verkehrsmittel (zu Fuß erreichbar)" value="bis 10 min">
+		          		<label class="formularz" for="bis 10 min">bis 10 min</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Wohnsituation / Rahmenbedingungen Öffentliche Verkehrsmittel (zu Fuß erreichbar)" value="bis 15 min">
+		          		<label class="formularz" for="bis 15 min">bis 15 min</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Wohnsituation / Rahmenbedingungen Öffentliche Verkehrsmittel (zu Fuß erreichbar)" value="mehr als 15 min">
+		          		<label class="formularz" for="mehr als 15 min">mehr als 15 min</label>
+		          	</li>
+		          </ul>
+
+		          <ul class="flex-checkbox-column two-per-row">
+		          	<span>Im Haushalt lebende Personen</span>
+		          	<li>
+		          		<input type="radio" name="Wohnsituation / Rahmenbedingungen Im Haushalt lebende Personen" value="nur betreuungsbedürftige Person">
+		          		<label class="formularz" for="nur betreuungsbedürftige Person">nur betreuungsbedürftige Person</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Wohnsituation / Rahmenbedingungen Im Haushalt lebende Personen" value="Betreuungsbedürftige + Ehepartner / Lebenspartner">
+		          		<label class="formularz" for="Betreuungsbedürftige + Ehepartner / Lebenspartner">Betreuungsbedürftige + Ehepartner / Lebenspartner</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Wohnsituation / Rahmenbedingungen Im Haushalt lebende Personen" value="Betreuungsbedürftige Person + mehrere Personen / wie viele zusätzliche Personen?">
+		          		<label class="formularz" for="Betreuungsbedürftige Person + mehrere Personen / wie viele zusätzliche Personen?">Betreuungsbedürftige Person + mehrere Personen / wie viele zusätzliche Personen?</label>
+		          	</li>
+		          	<li>
+		          		<input class="full" type="text" name="Wohnsituation / Rahmenbedingungen Im Haushalt lebende Personen, wie viele zusätzliche Personen?">
+		          	</li>
+		          </ul>
+
+		          <ul class="flex-checkbox-column four-per-row">
+		          	<span>Im Haushalt lebende Tiere</span>
+		          	<li>
+		          		<input type="checkbox" name="Wohnsituation / Rahmenbedingungen Haushalt Keine Tiere ">
+		          		<label class="formularz" for="Wohnsituation / Rahmenbedingungen Haushalt Keine Tiere ">Keine Tiere</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Wohnsituation / Rahmenbedingungen Haushalt tiere: Katze">
+		          		<label class="formularz" for="Wohnsituation / Rahmenbedingungen Haushalt tiere: Katze">Katze</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Wohnsituation / Rahmenbedingungen Haushalt tiere: Hund">
+		          		<label class="formularz" for="Wohnsituation / Rahmenbedingungen Haushalt tiere: Hund">Hund</label>
+		          	</li>
+		          	<li>
+		          		<input type="checkbox" name="Wohnsituation / Rahmenbedingungen Haushalt andere Tiere">
+		          		<label class="formularz" for="Wohnsituation / Rahmenbedingungen Haushalt andere Tiere">andere Tiere</label>
+		          	</li>
+		          </ul>
+
+		          <ul class="flex-checkbox-column four-per-row">
+		          	<label class="fld-label"><span>Anforderungen an die Betreuungskraft</span></label>
+		          	<span>Geschlecht</span>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft / Geschlecht" value="Frau">
+		          		<label class="formularz" for="Frau">Frau</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft / Geschlecht" value="Mann">
+		          		<label class="formularz" for="Mann">Mann</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft / Geschlecht" value="egal">
+		          		<label class="formularz" for="egal">egal</label>
+		          	</li>
+		          	<li></li>
+		          	
+		          </ul>
+
+		          <ul class="flex-checkbox-column four-per-row">
+		          	<span>Alter in Jahren</span>
+		          	<li style="flex: 1 0 100%">
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft / Alter in Jahren" value="Alter ist unwichtig">
+		          		<label class="formularz" for="Alter ist unwichtig">Alter ist unwichtig</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft / Alter in Jahren" value="20 - 30">
+		          		<label class="formularz" for="20 - 30">20 - 30</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft / Alter in Jahren" value="31 - 40">
+		          		<label class="formularz" for="31 - 40">31 - 40</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft / Alter in Jahren" value="41 - 50">
+		          		<label class="formularz" for="41 - 50">41 - 50</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft / Alter in Jahren" value="51 - 60">
+		          		<label class="formularz" for="51 - 60">51 - 60</label>
+		          	</li>
+		          </ul>
+
+		          <ul class="flex-checkbox-column four-per-row">
+		          	<span>Sprachkenntnisse</span>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft / Sprachkenntnisse" value="gering">
+		          		<label class="formularz" for="gering">gering</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft / Sprachkenntnisse" value="mittel">
+		          		<label class="formularz" for="mittel">mittel</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft / Sprachkenntnisse" value="gut">
+		          		<label class="formularz" for="gut">gut</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft / Sprachkenntnisse" value="sehr gut / fließend">
+		          		<label class="formularz" for="sehr gut / fließend">sehr gut / fließend</label>
+		          	</li>
+		          	
+		          </ul>
+
+		          <ul class="flex-checkbox-column four-per-row">
+		          	<span>Raucher/in</span>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft / Raucher/in" value="egal">
+		          		<label class="formularz" for="egal">egal</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft / Raucher/in" value="nein/ kein Raucher">
+		          		<label class="formularz" for="nein/ kein Raucher">nein/ kein Raucher</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft / Raucher/in" value="ja, wird akzeptiert">
+		          		<label class="formularz" for="ja, wird akzeptiert">ja, wird akzeptiert</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft / Raucher/in" value="ja, nur im Außenbereich">
+		          		<label class="formularz" for="ja, nur im Außenbereich">ja, nur im Außenbereich</label>
+		          	</li>
+		          </ul>
+
+		          <ul class="flex-checkbox-column four-per-row">
+		          	<span>Führerschein erforderlich?</span>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft / Führerschein erforderlich?" value="nein">
+		          		<label class="formularz" for="nein">nein</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft / Führerschein erforderlich?" value="ja, erfordelich">
+		          		<label class="formularz" for="ja, erfordelich">ja, erfordelich</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft / Führerschein erforderlich?" value="Fahrzeug vorhanden">
+		          		<label class="formularz" for="Fahrzeug vorhanden">Fahrzeug vorhanden</label>
+		          	</li>
+		          	<li></li>
+		          </ul>
+		          <ul class="flex-checkbox-column">
+		          	<span>Haushaltsführung / Aufgaben</span>
+		          	<li></li>
+		          	<li>
+		          		<label class="formularz">ja, immer</label>
+		          	</li>
+		          	<li>
+		          		<label class="formularz">nur teilweise</label>
+		          	</li>
+		          	<li>
+		          		<label class="formularz">nie</label>
+		          	</li>
+
+		          	<li>
+		          		<input type="checkbox" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben Kochen">
+		          		<label class="formularz" for="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben Kochen">Kochen</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben Kochen: " value="ja, immer">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben Kochen: " value="nur teilweise">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben Kochen: " value="nie">
+		          	</li>
+
+		          	<li>
+		          		<input type="checkbox" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben Abwaschen">
+		          		<label class="formularz" for="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben Abwaschen">Abwaschen</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben Abwaschen: " value="ja, immer">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben Abwaschen: " value="nur teilweise">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben Abwaschen: " value="nie">
+		          	</li>
+
+		          	<li>
+		          		<input type="checkbox" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben Waschen / Bügeln">
+		          		<label class="formularz" for="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben Waschen / Bügeln">Waschen / Bügeln</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben Waschen / Bügeln: " value="ja, immer">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben Waschen / Bügeln: " value="nur teilweise">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben Waschen / Bügeln: " value="nie">
+		          	</li>
+
+		          	<li>
+		          		<input type="checkbox" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben Einkaufen">
+		          		<label class="formularz" for="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben Einkaufen">Einkaufen</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben Einkaufen: " value="ja, immer">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben Einkaufen: " value="nur teilweise">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben Einkaufen: " value="nie">
+		          	</li>
+
+		          	<li>
+		          		<input type="checkbox" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben Reinigung / Putzen">
+		          		<label class="formularz" for="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben Reinigung / Putzen">Reinigung / Putzen</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben, Reinigung / Putzen: " value="ja, immer">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben, Reinigung / Putzen: " value="nur teilweise">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben, Reinigung / Putzen: " value="nie">
+		          	</li>
+
+		          	<li>
+		          		<input type="checkbox" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben, Begleitung zum Arzt">
+		          		<label class="formularz" for="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben, Begleitung zum Arzt">Begleitung zum Arzt</label>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben, Begleitung zum Arzt: " value="ja, immer">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben, Begleitung zum Arzt: " value="nur teilweise">
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben, Begleitung zum Arzt: " value="nie">
+		          	</li>
+		          	<ul class="flex-checkbox-column twentyfive-seventyfive">
+		          		<li>
+			          		<input type="checkbox" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben, Sonstige:">
+			          		<label class="formularz" for="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben, Sonstige:">Sonstige</label>
+			          	</li>
+			          	<li>
+			          		<textarea type="text" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben, Sonstige TEXT"></textarea>
+			          		
+			          	</li>
+		          	</ul>
+
+		          	<span class="small-text"><b>Bei mehreren Personen im Haushalt!</b></span>
+		          	<span class="small-text">für wie viele zusätzliche Personen soll der Haushalt übernommen werden:</span>
+		          	<ul class="flex-checkbox-column four-per-row">
+		          		<li>
+			          		<input type="radio" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben, zusätzliche Personen" value="nur für Pflegebedürftige">
+			          		<label class="formularz" for="nur für Pflegebedürftige">nur für Pflegebedürftige</label>
+			          	</li>
+			          	<li>
+			          		<input type="radio" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben, zusätzliche Personen" value="+1 Person">
+			          		<label class="formularz" for="+1 Person">+1 Person</label>
+			          	</li>
+			          	<li>
+			          		<input type="radio" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben, zusätzliche Personen" value="+2 Personen">
+			          		<label class="formularz" for="+2 Personen">+2 Personen</label>
+			          	</li>
+			          	<li>
+			          		<input type="radio" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben, zusätzliche Personen" value="+3 Personen">
+			          		<label class="formularz" for="+3 Personen">+3 Personen</label>
+			          	</li>
+		          	</ul>
+		          </ul>
+
+		          <ul class="full">
+		          	<span>Ihre Erwartungen an die Betreuungskraft</span>
+		          	<li>
+		          		<textarea class="full" rows="7" name="Anforderungen an die Betreuungskraft, Haushaltsführung / Aufgaben, Ihre Erwartungen an die Betreuungskraft"></textarea>
+		          	</li>
+		          </ul>
+
+		          <ul class="flex-checkbox-column twentyfive-seventyfive">
+		          	<label class="fld-label"><span>Allgemeines</span></label>
+		          	<span>Wie sind Sie auf uns aufmerksam geworden?</span>
+
+		          	<li>
+		          		<input type="radio" name="Wie sind Sie auf uns aufmerksam geworden?" value="Arzt">
+			          	<label class="formularz" for="Arzt">Arzt</label>
+		          	</li>
+		          	<li>
+		          		<ul class="flex-checkbox-column twentyfive-seventyfive no-extra-space">
+		          			<li>
+		          				<label class="formularz">welcher?</label>
+		          			</li>
+		          			<li>
+		          				<input type="text" name="Wie sind Sie auf uns aufmerksam geworden?: Arzt welcher">
+		          			</li>
+		          		</ul>
+		          	</li>
+		          	<li>
+		          		<input type="radio" name="Wie sind Sie auf uns aufmerksam geworden?" value="Pflegediesnt">
+			          	<label class="formularz" for="Pflegediesnt">Pflegediesnt</label>
+		          	</li>
+		          	<li>
+		          		<ul class="flex-checkbox-column twentyfive-seventyfive no-extra-space">
+		          			<li>
+		          				<label class="formularz">welcher?</label>
+		          			</li>
+		          			<li>
+		          				<input type="text" name="Wie sind Sie auf uns aufmerksam geworden?: Pflegediesnt welcher">
+		          			</li>
+		          		</ul>
+		          	</li>
+
+		          	<li>
+		          		<input type="radio" name="Wie sind Sie auf uns aufmerksam geworden?" value="Internet">
+			          	<label class="formularz" for="Internet">Internet</label>
+		          	</li>
+		          	<li></li>
+		          	<li>
+		          		<input type="radio" name="Wie sind Sie auf uns aufmerksam geworden?" value="Prospekte">
+			          	<label class="formularz" for="Prospekte">Prospekte</label>
+		          	</li>
+		          	<li></li>
+		          	<li>
+		          		<input type="radio" name="Wie sind Sie auf uns aufmerksam geworden?" value="Bekannte">
+			          	<label class="formularz" for="Bekannte">Bekannte</label>
+		          	</li>
+		          	<li></li>
+
+		          	<li>
+		          		<input type="radio" name="Wie sind Sie auf uns aufmerksam geworden?" value="Sonstiges">
+			          	<label class="formularz" for="Sonstiges">Sonstiges</label>
+		          	</li>
+		          	<li>
+		          		<ul class="flex-checkbox-column twentyfive-seventyfive no-extra-space">
+		          			<li>
+		          				<label class="formularz">welcher?</label>
+		          			</li>
+		          			<li>
+		          				<input type="text" name="Wie sind Sie auf uns aufmerksam geworden?: Sonstiges welcher">
+		          			</li>
+		          		</ul>
+		          	</li>
+		          </ul>
+
+		          <label class="fld-label"><span>Datenschutz- und Einwilligungserklärung</span></label>
+		          <ul class="flex-checkbox-column ten-ninety">
+		        	
+		        	<li class="full">
+		        		<input style="margin-left: 70%; margin-top: 44px" class="full" type="checkbox" name="Datenschutz- und Einwilligungserklärung">
+		        	</li>
+		        	<li>
+		        		<p class="terms">Hiermit willige ich ein, dass die AS-Pflege24 das Recht hat die Daten und Informationen
+						aus diesem Bedarfsfragebogen, zum Zwecke der Erbringung von Betreuungsdienstleitungen,
+						zu verwenden.<br>
+						Desweiterem bin ich damit einverstanden, dass die in diesem Bedarfsfragebogen enthaltenen Angaben,<br>
+						an ein Leistungserbringungsunternehmen mit Sitz in Osteuropa, übermittelt werden dürfen.
+						Dies sollte jedoch nur im Sinne der Vermittlung eines Dienstleistungsvertrages dienen.
+						Darüber hinaus stimme ich der Datenschutzerklärung zu. Diese ist einzusehen unter
+						<a href="www.as-pflege24.de/Datenschutzerklärung/">www.as-pflege24.de/Datenschutzerklärung/</a></p>
+		        	</li>
+
+		        	<li class="full">
+		        		<input style="margin-left: 70%; margin-top: 44px" type="checkbox" name="Datenschutz- und Einwilligungserklärung bestätige">
+		        	</li>
+		        	<li>
+		        		<p class="terms">Ich bestätige, dass die o. g. Angaben nach meinem besten Wissen wahrheitsgemäß erstellt wurden und vollständig sind.<br>
+						Ich versichere auch, dass ich zu Weiterleitung der o. g. Informationen befugt bin.</p>
+		        	</li>
+		          </ul>
+
+		        </div>
+
+
+		        
+		        <input class="button" type="submit" value="senden">
+
+		      </form>
+		</div>
+	</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	$("form").submit(function(e) {
+		var validationSuccess = true;
+		var firstError = null;
+
+		$(".required").each(function() {
+			var input = $(this).next("input");
+			if (input.val() == '') {
+				input.addClass('warning');
+				validationSuccess = false;
+
+				if (firstError == null) {
+					firstError = input;
+				}
+			} else {
+				input.removeClass('warning');
+			}
+		})
+
+		if (validationSuccess) {
+			return true;
+		} else {
+			e.preventDefault();
+
+			$('html, body').animate({
+		        scrollTop: $(firstError).offset().top - 100
+		    }, 450);
+		    firstError.focus();
+
+			return false;
+		}
+	})
+	$(".hamburger").click(function() {
+		if ($(".navbar-horizontal ul").hasClass('hidden')) {
+			$(".navbar-horizontal ul").fadeIn(250);
+			$(".navbar-horizontal ul").removeClass('hidden');
+			$(".navbar-horizontal img").attr('src', '../images/menu-2.svg?crc=510777794');
+		} else {
+			$(".navbar-horizontal ul").fadeOut(250);
+			$(".navbar-horizontal ul").addClass('hidden');
+			$(".navbar-horizontal img").attr('src', '../images/menu-1.svg?crc=446820304');
+		}
+	});
+</script>

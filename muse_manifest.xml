@@ -1,0 +1,301 @@
+<manifest alg="2" build="2018.1.0.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" ftp_hostname="ftp://home654296355.1and1-data.host" ftp_rootfolder="//AS Pflege24" exportTarget="FTP" domain="as-pflege24.de" resolutions="1x" timestamp="1528316873171">
+  <folder name="css">
+    <file name="site_global.css" crc="433910277"/>
+    <file name="master_mp-allgemeines.css" crc="472703387" ref="allgemeines-24-stunden-betreeung"/>
+    <file name="nomq_preview_master_mp-allgemeines.css" crc="3880804238" ref="allgemeines-24-stunden-betreeung"/>
+    <file name="master_mp-fragen.css" crc="4229472324" ref="haeufig-gestellte-fragen"/>
+    <file name="nomq_preview_master_mp-fragen.css" crc="43396679" ref="haeufig-gestellte-fragen"/>
+    <file name="master_mp-ablauf.css" crc="3984422014" ref="ablauf"/>
+    <file name="nomq_preview_master_mp-ablauf.css" crc="3929252403" ref="ablauf"/>
+    <file name="master_master-page.css" crc="4216354831" ref="leistungen:kontakt:kosten:datenschutzerklaerung:impressum:index:informationen:bedarfsfragebogen:ueber-uns"/>
+    <file name="nomq_preview_master_master-page.css" crc="347476810" ref="leistungen:kontakt:kosten:datenschutzerklaerung:impressum:index:informationen:bedarfsfragebogen:ueber-uns"/>
+    <file name="master_mp-kooperation.css" crc="528403955" ref="kooperation-mit-polnischen-partnern"/>
+    <file name="nomq_preview_master_mp-kooperation.css" crc="316343319" ref="kooperation-mit-polnischen-partnern"/>
+    <file name="master_mp-presikalkulation.css" crc="469885809" ref="kosten-presikalkulation"/>
+    <file name="nomq_preview_master_mp-presikalkulation.css" crc="275480685" ref="kosten-presikalkulation"/>
+    <file name="master_mp-online.css" crc="113973513" ref="bedarfsfragebogen-online"/>
+    <file name="nomq_preview_master_mp-online.css" crc="87348516" ref="bedarfsfragebogen-online"/>
+    <file name="master_mp-zuschuesse.css" crc="4083955417" ref="kosten-zuschuesse"/>
+    <file name="nomq_preview_master_mp-zuschuesse.css" crc="51185025" ref="kosten-zuschuesse"/>
+    <file name="master_mp-pdf.css" crc="4016699675" ref="bedarfsfragebogen-pdf"/>
+    <file name="nomq_preview_master_mp-pdf.css" crc="238691236" ref="bedarfsfragebogen-pdf"/>
+    <file name="leistungen.css" crc="403842959" ref="leistungen"/>
+    <file name="nomq_leistungen.css" crc="465205773" ref="leistungen"/>
+    <file name="kontakt.css" crc="4174021315" ref="kontakt"/>
+    <file name="nomq_kontakt.css" crc="3944148782" ref="kontakt"/>
+    <file name="kooperation-mit-polnischen-partnern.css" crc="4261486128" ref="kooperation-mit-polnischen-partnern"/>
+    <file name="nomq_kooperation-mit-polnischen-partnern.css" crc="4079578988" ref="kooperation-mit-polnischen-partnern"/>
+    <file name="kosten-zuschuesse.css" crc="4197734728" ref="kosten-zuschuesse"/>
+    <file name="nomq_kosten-zuschuesse.css" crc="3763664721" ref="kosten-zuschuesse"/>
+    <file name="kosten.css" crc="210675238" ref="kosten"/>
+    <file name="nomq_kosten.css" crc="131770546" ref="kosten"/>
+    <file name="datenschutzerklaerung.css" crc="4292343202" ref="datenschutzerklaerung"/>
+    <file name="nomq_datenschutzerklaerung.css" crc="499763902" ref="datenschutzerklaerung"/>
+    <file name="haeufig-gestellte-fragen.css" crc="253024658" ref="haeufig-gestellte-fragen"/>
+    <file name="nomq_haeufig-gestellte-fragen.css" crc="4271712096" ref="haeufig-gestellte-fragen"/>
+    <file name="bedarfsfragebogen-pdf.css" crc="2207893" ref="bedarfsfragebogen-pdf"/>
+    <file name="nomq_bedarfsfragebogen-pdf.css" crc="3917789847" ref="bedarfsfragebogen-pdf"/>
+    <file name="ablauf.css" crc="14026481" ref="ablauf"/>
+    <file name="nomq_ablauf.css" crc="492049126" ref="ablauf"/>
+    <file name="impressum.css" crc="443741465" ref="impressum"/>
+    <file name="nomq_impressum.css" crc="3860683011" ref="impressum"/>
+    <file name="index.css" crc="4070141563" ref="index"/>
+    <file name="nomq_index.css" crc="3784450571" ref="index"/>
+    <file name="allgemeines-24-stunden-betreeung.css" crc="4248596897" ref="allgemeines-24-stunden-betreeung"/>
+    <file name="nomq_allgemeines-24-stunden-betreeung.css" crc="413726702" ref="allgemeines-24-stunden-betreeung"/>
+    <file name="kosten-presikalkulation.css" crc="146321108" ref="kosten-presikalkulation"/>
+    <file name="nomq_kosten-presikalkulation.css" crc="4147802149" ref="kosten-presikalkulation"/>
+    <file name="bedarfsfragebogen-online.css" crc="3775090777" ref="bedarfsfragebogen-online"/>
+    <file name="nomq_bedarfsfragebogen-online.css" crc="3881334569" ref="bedarfsfragebogen-online"/>
+    <file name="informationen.css" crc="3830067533" ref="informationen"/>
+    <file name="nomq_informationen.css" crc="471134303" ref="informationen"/>
+    <file name="bedarfsfragebogen.css" crc="383399667" ref="bedarfsfragebogen"/>
+    <file name="nomq_bedarfsfragebogen.css" crc="4271232573" ref="bedarfsfragebogen"/>
+    <file name="ueber-uns.css" crc="4087323319" ref="ueber-uns"/>
+    <file name="nomq_ueber-uns.css" crc="4063715380" ref="ueber-uns"/>
+  </folder>
+  <folder name="assets">
+    <file name="bedarfsfragebogen.pdf" crc="79910600" seo="true" mt="1527241392000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:ueber-uns:leistungen:kosten:informationen:kontakt:datenschutzerklaerung:impressum:kosten-presikalkulation:kosten-zuschuesse:ablauf:allgemeines-24-stunden-betreeung:kooperation-mit-polnischen-partnern:haeufig-gestellte-fragen:bedarfsfragebogen:bedarfsfragebogen-online:bedarfsfragebogen-pdf"/>
+    <file name="museutils.js" crc="340535759" ref="index:ueber-uns:leistungen:kosten:informationen:kontakt:datenschutzerklaerung:impressum:kosten-presikalkulation:kosten-zuschuesse:ablauf:allgemeines-24-stunden-betreeung:kooperation-mit-polnischen-partnern:haeufig-gestellte-fragen:bedarfsfragebogen:bedarfsfragebogen-online:bedarfsfragebogen-pdf"/>
+    <file name="whatinput.js" crc="86476730" ref="index:ueber-uns:leistungen:kosten:informationen:kontakt:datenschutzerklaerung:impressum:kosten-presikalkulation:kosten-zuschuesse:ablauf:allgemeines-24-stunden-betreeung:kooperation-mit-polnischen-partnern:haeufig-gestellte-fragen:bedarfsfragebogen:bedarfsfragebogen-online:bedarfsfragebogen-pdf"/>
+    <file name="museconfig.js" crc="310584261" ref="index:ueber-uns:leistungen:kosten:informationen:kontakt:datenschutzerklaerung:impressum:kosten-presikalkulation:kosten-zuschuesse:ablauf:allgemeines-24-stunden-betreeung:kooperation-mit-polnischen-partnern:haeufig-gestellte-fragen:bedarfsfragebogen:bedarfsfragebogen-online:bedarfsfragebogen-pdf"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4260645839" ref="index:ueber-uns:leistungen:kosten:informationen:kontakt:datenschutzerklaerung:impressum:kosten-presikalkulation:kosten-zuschuesse:ablauf:allgemeines-24-stunden-betreeung:kooperation-mit-polnischen-partnern:haeufig-gestellte-fragen:bedarfsfragebogen:bedarfsfragebogen-online:bedarfsfragebogen-pdf"/>
+    <file name="jquery.musemenu.js" crc="510910590" ref="index:ueber-uns:leistungen:kosten:informationen:kontakt:datenschutzerklaerung:impressum:kosten-presikalkulation:kosten-zuschuesse:ablauf:allgemeines-24-stunden-betreeung:kooperation-mit-polnischen-partnern:haeufig-gestellte-fragen:bedarfsfragebogen:bedarfsfragebogen-online:bedarfsfragebogen-pdf"/>
+    <file name="jquery.watch.js" crc="51536988" ref="index:ueber-uns:leistungen:kosten:informationen:kontakt:datenschutzerklaerung:impressum:kosten-presikalkulation:kosten-zuschuesse:ablauf:allgemeines-24-stunden-betreeung:kooperation-mit-polnischen-partnern:haeufig-gestellte-fragen:bedarfsfragebogen:bedarfsfragebogen-online:bedarfsfragebogen-pdf"/>
+    <file name="webpro.js" crc="4059564322" ref="index:ueber-uns:leistungen:kosten:informationen:kontakt:datenschutzerklaerung:impressum:kosten-presikalkulation:kosten-zuschuesse:ablauf:allgemeines-24-stunden-betreeung:kooperation-mit-polnischen-partnern:haeufig-gestellte-fragen:bedarfsfragebogen:bedarfsfragebogen-online:bedarfsfragebogen-pdf"/>
+    <file name="musewpslideshow.js" crc="3862962738" ref="index:ueber-uns:leistungen:kosten:informationen:kontakt:datenschutzerklaerung:impressum:kosten-presikalkulation:kosten-zuschuesse:ablauf:allgemeines-24-stunden-betreeung:kooperation-mit-polnischen-partnern:haeufig-gestellte-fragen:bedarfsfragebogen:bedarfsfragebogen-online:bedarfsfragebogen-pdf"/>
+    <file name="jquery.museoverlay.js" crc="4147669564" ref="index:ueber-uns:leistungen:kosten:informationen:kontakt:datenschutzerklaerung:impressum:kosten-presikalkulation:kosten-zuschuesse:ablauf:allgemeines-24-stunden-betreeung:kooperation-mit-polnischen-partnern:haeufig-gestellte-fragen:bedarfsfragebogen:bedarfsfragebogen-online:bedarfsfragebogen-pdf"/>
+    <file name="touchswipe.js" crc="4075097462" ref="index:ueber-uns:leistungen:kosten:informationen:kontakt:datenschutzerklaerung:impressum:kosten-presikalkulation:kosten-zuschuesse:ablauf:allgemeines-24-stunden-betreeung:kooperation-mit-polnischen-partnern:haeufig-gestellte-fragen:bedarfsfragebogen:bedarfsfragebogen-online:bedarfsfragebogen-pdf"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:ueber-uns:leistungen:kosten:informationen:kontakt:datenschutzerklaerung:impressum:kosten-presikalkulation:kosten-zuschuesse:ablauf:allgemeines-24-stunden-betreeung:kooperation-mit-polnischen-partnern:haeufig-gestellte-fragen:bedarfsfragebogen:bedarfsfragebogen-online:bedarfsfragebogen-pdf"/>
+    <file name="jquery.museresponsive.js" crc="527716135" ref="index:ueber-uns:leistungen:kosten:informationen:kontakt:datenschutzerklaerung:impressum:kosten-presikalkulation:kosten-zuschuesse:ablauf:allgemeines-24-stunden-betreeung:kooperation-mit-polnischen-partnern:haeufig-gestellte-fragen:bedarfsfragebogen:bedarfsfragebogen-online:bedarfsfragebogen-pdf"/>
+    <file name="require.js" crc="7928878" ref="index:ueber-uns:leistungen:kosten:informationen:kontakt:datenschutzerklaerung:impressum:kosten-presikalkulation:kosten-zuschuesse:ablauf:allgemeines-24-stunden-betreeung:kooperation-mit-polnischen-partnern:haeufig-gestellte-fragen:bedarfsfragebogen:bedarfsfragebogen-online:bedarfsfragebogen-pdf"/>
+    <file name="form_check.php" crc="4020933626" ref="kontakt"/>
+    <file name="form_throttle.php" crc="4259590256" ref="kontakt"/>
+    <file name="form_process.php" crc="37464564" ref="kontakt"/>
+    <file name="form-u9409.php" crc="3847127752" ref="kontakt"/>
+  </folder>
+  <folder name="images">
+    <file name="logo.svg" crc="3952794798" ref="index:kosten-presikalkulation:kosten-zuschuesse:ablauf:allgemeines-24-stunden-betreeung:kooperation-mit-polnischen-partnern:haeufig-gestellte-fragen:bedarfsfragebogen-online:bedarfsfragebogen-pdf"/>
+    <file name="logo_poster_u149.png" crc="430818071" ref="index:kosten-presikalkulation:kosten-zuschuesse:ablauf:allgemeines-24-stunden-betreeung:kooperation-mit-polnischen-partnern:haeufig-gestellte-fragen:bedarfsfragebogen-online:bedarfsfragebogen-pdf"/>
+    <file name="polnische-pflegehilfe.jpg" crc="195195393" ref="index:datenschutzerklaerung:impressum">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="logo-mobile.svg" crc="423075796" ref="index:kosten-presikalkulation:kosten-zuschuesse:ablauf:allgemeines-24-stunden-betreeung:kooperation-mit-polnischen-partnern:haeufig-gestellte-fragen:bedarfsfragebogen-online:bedarfsfragebogen-pdf"/>
+    <file name="logo-mobile_poster_u13349.png" crc="4119630048" ref="index:kosten-presikalkulation:kosten-zuschuesse:ablauf:allgemeines-24-stunden-betreeung:kooperation-mit-polnischen-partnern:haeufig-gestellte-fragen:bedarfsfragebogen-online:bedarfsfragebogen-pdf"/>
+    <file name="menu-1.svg" crc="446820304" ref="index:kosten-presikalkulation:kosten-zuschuesse:ablauf:allgemeines-24-stunden-betreeung:kooperation-mit-polnischen-partnern:haeufig-gestellte-fragen:bedarfsfragebogen-online:bedarfsfragebogen-pdf"/>
+    <file name="menu-1_poster_u13958.png" crc="49831775" ref="index:kosten-presikalkulation:kosten-zuschuesse:ablauf:allgemeines-24-stunden-betreeung:kooperation-mit-polnischen-partnern:haeufig-gestellte-fragen:bedarfsfragebogen-online:bedarfsfragebogen-pdf"/>
+    <file name="menu-2.svg" crc="510777794" ref="index:kosten-presikalkulation:kosten-zuschuesse:ablauf:allgemeines-24-stunden-betreeung:kooperation-mit-polnischen-partnern:haeufig-gestellte-fragen:bedarfsfragebogen-online:bedarfsfragebogen-pdf"/>
+    <file name="menu-2_poster_u13966.png" crc="4038973125" ref="index:kosten-presikalkulation:kosten-zuschuesse:ablauf:allgemeines-24-stunden-betreeung:kooperation-mit-polnischen-partnern:haeufig-gestellte-fragen:bedarfsfragebogen-online:bedarfsfragebogen-pdf"/>
+    <file name="polnische-pflegehilfe-u519-fr.jpg" crc="4207614297" ref="index:datenschutzerklaerung:impressum"/>
+    <file name="polnische-pflegehilfe-u519-fr2.jpg" crc="3968532503" ref="index:datenschutzerklaerung:impressum"/>
+    <file name="polnische-pflegehilfe-u519-fr3.jpg" crc="238274709" ref="index:datenschutzerklaerung:impressum"/>
+    <file name="altenplfege mit herz.jpg" crc="26216072" ref="ueber-uns">
+      <caption webpage="ueber-uns" alt=""/>
+    </file>
+    <file name="altenplfege mit herz-u2480-fr.jpg" crc="172090742" ref="ueber-uns"/>
+    <file name="altenplfege mit herz-u2480-fr2.jpg" crc="402499899" ref="ueber-uns"/>
+    <file name="24 stunden pflege.jpg" crc="475514352" ref="leistungen">
+      <caption webpage="leistungen" alt=""/>
+    </file>
+    <file name="24 stunden pflege-mobile-u2810-fr.jpg" crc="3803934498" ref="leistungen"/>
+    <file name="24 stunden pflege-mobile-u2810-fr2.jpg" crc="3761376372" ref="leistungen"/>
+    <file name="pflegekraf aus polen.jpg" crc="437838717" ref="kosten:kosten-presikalkulation:kosten-zuschuesse">
+      <caption webpage="kosten" alt=""/>
+    </file>
+    <file name="arrow.svg" crc="4194408715" ref="kosten:informationen:bedarfsfragebogen"/>
+    <file name="arrow_poster_u67738.png" crc="4049924453" ref="kosten:informationen:bedarfsfragebogen"/>
+    <file name="pflegekraf aus polen-mobile-u3982-fr.jpg" crc="4194910066" ref="kosten:kosten-presikalkulation:kosten-zuschuesse"/>
+    <file name="pflegekraf aus polen-mobile-u3982-fr2.jpg" crc="3920182479" ref="kosten:kosten-presikalkulation:kosten-zuschuesse"/>
+    <file name="polnische pflegekraft.jpg" crc="223247641" ref="informationen:ablauf:allgemeines-24-stunden-betreeung:kooperation-mit-polnischen-partnern:haeufig-gestellte-fragen">
+      <caption webpage="informationen" alt=""/>
+    </file>
+    <file name="polnische pflegekraft-mobile-u4472-fr.jpg" crc="7615529" ref="informationen:ablauf:allgemeines-24-stunden-betreeung:kooperation-mit-polnischen-partnern:haeufig-gestellte-fragen"/>
+    <file name="polnische pflegekraft-mobile-u4472-fr2.jpg" crc="3896782739" ref="informationen:ablauf:allgemeines-24-stunden-betreeung:kooperation-mit-polnischen-partnern:haeufig-gestellte-fragen"/>
+    <file name="seniorenbetreuung.jpg" crc="53410674" ref="kontakt">
+      <caption webpage="kontakt" alt=""/>
+    </file>
+    <file name="seniorenbetreuung-mobile-u6684-fr.jpg" crc="372853367" ref="kontakt"/>
+    <file name="seniorenbetreuung-mobile-u6684-fr2.jpg" crc="52756978" ref="kontakt"/>
+    <file name="telephone.svg" crc="4225726615" ref="ablauf"/>
+    <file name="telephone_poster_u4912.png" crc="126934924" ref="ablauf"/>
+    <file name="customer service.svg" crc="84270693" ref="ablauf"/>
+    <file name="customer service_poster_u5145.png" crc="237283060" ref="ablauf"/>
+    <file name="mail.svg" crc="161829168" ref="ablauf"/>
+    <file name="mail_poster_u5162.png" crc="118609211" ref="ablauf"/>
+    <file name="smile.svg" crc="3809245372" ref="ablauf"/>
+    <file name="smile_poster_u5429.png" crc="4109506916" ref="ablauf"/>
+    <file name="altenpflege.svg" crc="4123353865" ref="bedarfsfragebogen:bedarfsfragebogen-online:bedarfsfragebogen-pdf"/>
+    <file name="altenpflege_poster_u96152.png" crc="4206803621" ref="bedarfsfragebogen:bedarfsfragebogen-online:bedarfsfragebogen-pdf"/>
+    <file name="file.svg" crc="4173896292" ref="bedarfsfragebogen-pdf"/>
+    <file name="file_poster_u98734.png" crc="71816574" ref="bedarfsfragebogen-pdf"/>
+  </folder>
+  <file name="index.html" crc="510212043" seo="true" mt="1528316826190" redirect="true"/>
+  <file name="ueber-uns.html" crc="57076820" seo="true" mt="1528316829909" redirect="true"/>
+  <file name="leistungen.html" crc="497589674" seo="true" mt="1528316832915" redirect="true"/>
+  <file name="kosten.html" crc="3972418024" seo="true" mt="1528316836377" redirect="true"/>
+  <file name="informationen.html" crc="3958992025" seo="true" mt="1528316839518" redirect="true"/>
+  <file name="kontakt.html" crc="3837894683" seo="true" mt="1528316843435" redirect="true"/>
+  <file name="datenschutzerklaerung.html" crc="4133679960" mt="1528316847431" redirect="true"/>
+  <file name="impressum.html" crc="55572784" mt="1528316850289" redirect="true"/>
+  <file name="kosten-presikalkulation.html" crc="477973306" seo="true" mt="1528315903170" redirect="true"/>
+  <file name="kosten-zuschuesse.html" crc="4132285972" seo="true" mt="1528316032820" redirect="true"/>
+  <file name="ablauf.html" crc="407484082" seo="true" mt="1528315028712" redirect="true"/>
+  <file name="allgemeines-24-stunden-betreeung.html" crc="425455348" seo="true" mt="1528315799977" redirect="true"/>
+  <file name="kooperation-mit-polnischen-partnern.html" crc="4293431162" seo="true" mt="1528315676596" redirect="true"/>
+  <file name="haeufig-gestellte-fragen.html" crc="116863073" seo="true" mt="1528316165984" redirect="true"/>
+  <file name="bedarfsfragebogen.html" crc="282983889" seo="true" mt="1528316868974" redirect="true"/>
+  <file name="bedarfsfragebogen-online.html" crc="4189746624" seo="true" mt="1528312211980" redirect="true"/>
+  <file name="bedarfsfragebogen-pdf.html" crc="3997247035" seo="true" mt="1528312490583" redirect="true"/>
+  <site>
+    <asset filename="bedarfsfragebogen.pdf" muse_href="upload:U57029"/>
+    <paragraphStyle className="normal_text" uid="U49"/>
+    <paragraphStyle className="Stopka" uid="U8519"/>
+    <paragraphStyle className="Akapit" uid="U8520"/>
+    <paragraphStyle className="Senden" uid="U8522"/>
+    <paragraphStyle className="Menu" uid="U9091"/>
+    <paragraphStyle className="formularz-szary" uid="U25692"/>
+    <paragraphStyle className="formularz" uid="U25749"/>
+    <paragraphStyle className="form-nag--wek" uid="U26221"/>
+    <nestedListStyle className="nls-None" uid="U52"/>
+  </site>
+  <renditions>
+    <rendition device="desktop">
+      <page name="Home" filename="index.html" muse_href="page:U93" master="U1570">
+        <breakpoint uid="U1782" maxwidth="707" minwidth="0" squishy="true"/>
+        <breakpoint uid="U1277" maxwidth="966" minwidth="708" squishy="true"/>
+        <breakpoint uid="U83" maxwidth="1300" minwidth="967" squishy="true"/>
+      </page>
+      <masterPage name="Master Page" master="U62" uid="U1570">
+        <breakpoint uid="U2299" maxwidth="625" minwidth="0" squishy="true"/>
+        <breakpoint uid="U1592" maxwidth="966" minwidth="626" squishy="true"/>
+        <breakpoint uid="U1571" maxwidth="1300" minwidth="967" squishy="true"/>
+      </masterPage>
+      <masterPage name="None" master="null" uid="U62">
+        <breakpoint uid="U63" maxwidth="1300" minwidth="0" squishy="true"/>
+      </masterPage>
+      <page name="Über uns" filename="ueber-uns.html" muse_href="page:U2523" master="U1570">
+        <breakpoint uid="U2459" maxwidth="707" minwidth="0" squishy="true"/>
+        <breakpoint uid="U2506" maxwidth="966" minwidth="708" squishy="true"/>
+        <breakpoint uid="U2490" maxwidth="1300" minwidth="967" squishy="true"/>
+      </page>
+      <page name="Leistungen" filename="leistungen.html" muse_href="page:U2835" master="U1570">
+        <breakpoint uid="U2819" maxwidth="707" minwidth="0" squishy="true"/>
+        <breakpoint uid="U2775" maxwidth="966" minwidth="708" squishy="true"/>
+        <breakpoint uid="U2793" maxwidth="1300" minwidth="967" squishy="true"/>
+      </page>
+      <page name="Kosten" filename="kosten.html" muse_href="page:U3991" master="U1570">
+        <breakpoint uid="U3924" maxwidth="707" minwidth="0" squishy="true"/>
+        <breakpoint uid="U3945" maxwidth="966" minwidth="708" squishy="true"/>
+        <breakpoint uid="U3962" maxwidth="1300" minwidth="967" squishy="true"/>
+      </page>
+      <page name="Informationen" filename="informationen.html" muse_href="page:U4515" master="U1570">
+        <breakpoint uid="U4474" maxwidth="707" minwidth="0" squishy="true"/>
+        <breakpoint uid="U4495" maxwidth="966" minwidth="708" squishy="true"/>
+        <breakpoint uid="U4441" maxwidth="1300" minwidth="967" squishy="true"/>
+      </page>
+      <page name="Kontakt" filename="kontakt.html" muse_href="page:U6759" master="U1570">
+        <breakpoint uid="U6725" maxwidth="707" minwidth="0" squishy="true"/>
+        <breakpoint uid="U6689" maxwidth="966" minwidth="708" squishy="true"/>
+        <breakpoint uid="U6632" maxwidth="1300" minwidth="967" squishy="true"/>
+      </page>
+      <page name="Datenschutzerklärung" filename="datenschutzerklaerung.html" muse_href="page:U61661" master="U1570">
+        <breakpoint uid="U61627" maxwidth="707" minwidth="0" squishy="true"/>
+        <breakpoint uid="U61597" maxwidth="966" minwidth="708" squishy="true"/>
+        <breakpoint uid="U61645" maxwidth="1300" minwidth="967" squishy="true"/>
+      </page>
+      <page name="Impressum" filename="impressum.html" muse_href="page:U61869" master="U1570">
+        <breakpoint uid="U61848" maxwidth="707" minwidth="0" squishy="true"/>
+        <breakpoint uid="U61831" maxwidth="966" minwidth="708" squishy="true"/>
+        <breakpoint uid="U61806" maxwidth="1300" minwidth="967" squishy="true"/>
+      </page>
+      <page name="Kosten &amp; Preiskalkulation" filename="kosten-presikalkulation.html" muse_href="page:U64950" master="U80044">
+        <breakpoint uid="U64931" maxwidth="707" minwidth="0" squishy="true"/>
+        <breakpoint uid="U64874" maxwidth="966" minwidth="708" squishy="true"/>
+        <breakpoint uid="U64906" maxwidth="1300" minwidth="967" squishy="true"/>
+      </page>
+      <masterPage name="MP Presikalkulation" master="U62" uid="U80044">
+        <breakpoint uid="U80048" maxwidth="625" minwidth="0" squishy="true"/>
+        <breakpoint uid="U80289" maxwidth="966" minwidth="626" squishy="true"/>
+        <breakpoint uid="U80668" maxwidth="1300" minwidth="967" squishy="true"/>
+      </masterPage>
+      <page name="Zuschüsse und Fördermöglichkeiten" filename="kosten-zuschuesse.html" muse_href="page:U65130" master="U76190">
+        <breakpoint uid="U65111" maxwidth="707" minwidth="0" squishy="true"/>
+        <breakpoint uid="U65054" maxwidth="966" minwidth="708" squishy="true"/>
+        <breakpoint uid="U65086" maxwidth="1300" minwidth="967" squishy="true"/>
+      </page>
+      <masterPage name="MP Zuschuesse" master="U62" uid="U76190">
+        <breakpoint uid="U76323" maxwidth="625" minwidth="0" squishy="true"/>
+        <breakpoint uid="U76948" maxwidth="966" minwidth="626" squishy="true"/>
+        <breakpoint uid="U77200" maxwidth="1300" minwidth="967" squishy="true"/>
+      </masterPage>
+      <page name="Ablauf" filename="ablauf.html" muse_href="page:U82146" master="U90337">
+        <breakpoint uid="U82049" maxwidth="707" minwidth="0" squishy="true"/>
+        <breakpoint uid="U82081" maxwidth="966" minwidth="708" squishy="true"/>
+        <breakpoint uid="U82114" maxwidth="1300" minwidth="967" squishy="true"/>
+      </page>
+      <masterPage name="MP Ablauf" master="U62" uid="U90337">
+        <breakpoint uid="U90796" maxwidth="625" minwidth="0" squishy="true"/>
+        <breakpoint uid="U91346" maxwidth="966" minwidth="626" squishy="true"/>
+        <breakpoint uid="U90460" maxwidth="1300" minwidth="967" squishy="true"/>
+      </masterPage>
+      <page name="Allgemeines 24 Stunden Betreeung" filename="allgemeines-24-stunden-betreeung.html" muse_href="page:U82656" master="U91459">
+        <breakpoint uid="U82592" maxwidth="707" minwidth="0" squishy="true"/>
+        <breakpoint uid="U82553" maxwidth="966" minwidth="708" squishy="true"/>
+        <breakpoint uid="U82624" maxwidth="1300" minwidth="967" squishy="true"/>
+      </page>
+      <masterPage name="MP Allgemeines" master="U62" uid="U91459">
+        <breakpoint uid="U91918" maxwidth="625" minwidth="0" squishy="true"/>
+        <breakpoint uid="U92468" maxwidth="966" minwidth="626" squishy="true"/>
+        <breakpoint uid="U91582" maxwidth="1300" minwidth="967" squishy="true"/>
+      </masterPage>
+      <page name="Kooperation mit polnischen Partnern" filename="kooperation-mit-polnischen-partnern.html" muse_href="page:U83166" master="U92581">
+        <breakpoint uid="U83072" maxwidth="707" minwidth="0" squishy="true"/>
+        <breakpoint uid="U83108" maxwidth="966" minwidth="708" squishy="true"/>
+        <breakpoint uid="U83040" maxwidth="1300" minwidth="967" squishy="true"/>
+      </page>
+      <masterPage name="MP Kooperation" master="U62" uid="U92581">
+        <breakpoint uid="U93040" maxwidth="625" minwidth="0" squishy="true"/>
+        <breakpoint uid="U93590" maxwidth="966" minwidth="626" squishy="true"/>
+        <breakpoint uid="U92704" maxwidth="1300" minwidth="967" squishy="true"/>
+      </masterPage>
+      <page name="Häufig gestellte Fragen" filename="haeufig-gestellte-fragen.html" muse_href="page:U83298" master="U93703">
+        <breakpoint uid="U83204" maxwidth="707" minwidth="0" squishy="true"/>
+        <breakpoint uid="U83263" maxwidth="966" minwidth="708" squishy="true"/>
+        <breakpoint uid="U83172" maxwidth="1300" minwidth="967" squishy="true"/>
+      </page>
+      <masterPage name="MP Fragen" master="U62" uid="U93703">
+        <breakpoint uid="U94162" maxwidth="625" minwidth="0" squishy="true"/>
+        <breakpoint uid="U94712" maxwidth="966" minwidth="626" squishy="true"/>
+        <breakpoint uid="U93826" maxwidth="1300" minwidth="967" squishy="true"/>
+      </masterPage>
+      <page name="Bedarfsfragebogen" filename="bedarfsfragebogen.html" muse_href="page:U95240" master="U1570">
+        <breakpoint uid="U95170" maxwidth="707" minwidth="0" squishy="true"/>
+        <breakpoint uid="U95193" maxwidth="966" minwidth="708" squishy="true"/>
+        <breakpoint uid="U95217" maxwidth="1300" minwidth="967" squishy="true"/>
+      </page>
+      <page name="Bedarfsfragebogen online" filename="bedarfsfragebogen-online.html" muse_href="page:U96369" master="U97142">
+        <breakpoint uid="U96323" maxwidth="707" minwidth="0" squishy="true"/>
+        <breakpoint uid="U96303" maxwidth="966" minwidth="708" squishy="true"/>
+        <breakpoint uid="U96349" maxwidth="1300" minwidth="967" squishy="true"/>
+      </page>
+      <masterPage name="MP online" master="U62" uid="U97142">
+        <breakpoint uid="U97146" maxwidth="625" minwidth="0" squishy="true"/>
+        <breakpoint uid="U97387" maxwidth="966" minwidth="626" squishy="true"/>
+        <breakpoint uid="U97515" maxwidth="1300" minwidth="967" squishy="true"/>
+      </masterPage>
+      <page name="Bedarfsfragebogen PDF" filename="bedarfsfragebogen-pdf.html" muse_href="page:U97141" master="U97648">
+        <breakpoint uid="U97085" maxwidth="707" minwidth="0" squishy="true"/>
+        <breakpoint uid="U97106" maxwidth="966" minwidth="708" squishy="true"/>
+        <breakpoint uid="U97063" maxwidth="1300" minwidth="967" squishy="true"/>
+      </page>
+      <masterPage name="MP pdf" master="U62" uid="U97648">
+        <breakpoint uid="U98021" maxwidth="625" minwidth="0" squishy="true"/>
+        <breakpoint uid="U97895" maxwidth="966" minwidth="626" squishy="true"/>
+        <breakpoint uid="U97767" maxwidth="1300" minwidth="967" squishy="true"/>
+      </masterPage>
+    </rendition>
+  </renditions>
+</manifest>
